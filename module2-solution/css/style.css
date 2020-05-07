@@ -1,0 +1,163 @@
+        body
+        {
+			margin: 0px;
+			
+			box-sizing: border-box;
+			color: white;
+			font-size: 16px;
+		}
+		h1
+		{
+			text-align: center;
+			text-transform: capitalize;
+			color: black;
+		}
+		
+		.container
+		{
+			background-color: rgb(51,46,61);
+			border: 1px solid black;
+			/*width: 80%;*/
+			margin-top: 20px;
+			margin-bottom: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		#header1,#header2,#header3
+		{
+			float: right;
+			width: 100px;
+			text-align:  center;
+			text-shadow: 2px 1px;
+			text-transform: capitalize;
+			color: black;
+			font-size: 24px;
+	    }
+		#header1
+		{
+			background-color: rgb(227,188,135); 
+		}
+		#header2
+		{
+			background-color: rgb(255,239,17);
+		}
+		#header3
+		{
+			background-color: rgb(72,246,161);
+		}
+		.para
+		{
+			clear: right;
+		}
+		@media(min-width: 992px)
+		{
+			.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12
+			{
+				float: left;
+			}
+			
+			.col-lg-1
+			{
+				width: 8.33%;
+			}
+			.col-lg-2
+			{
+				width: 16.66%;
+			}
+			.col-lg-3
+			{
+				width: 25%;
+			}
+			.col-lg-4
+			{
+				width: 33.33%;
+			}
+			.col-lg-5
+			{
+				width: 41.66%;
+			}
+			.col-lg-6
+			{
+				width: 50%;
+			}
+			.col-lg-7
+			{
+				width: 58.33%;
+			}
+			.col-lg-8
+			{
+				width: 66.66%;
+			}
+			.col-lg-9
+			{
+				width: 75%;
+			}
+			.col-lg-10
+			{
+				width: 83.33%;
+			}
+			.col-lg-11
+			{
+				width: 91.66%;
+			}
+			.col-lg-12
+			{
+				width: 100%;
+			}
+		}
+		@media(min-width: 768px) and (max-width: 991px)
+		{
+			.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12
+			{
+				float: left;
+			}
+			
+			.col-md-1
+			{
+				width: 8.33%;
+			}
+			.col-md-2
+			{
+				width: 16.66%;
+			}
+			.col-md-3
+			{
+				width: 25%;
+			}
+			.col-md-4
+			{
+				width: 33.33%;
+			}
+			.col-md-5
+			{
+				width: 41.66%;
+			}
+			.col-md-6
+			{
+				width: 50%;
+			}
+			.col-md-7
+			{
+				width: 58.33%;
+			}
+			.col-md-8
+			{
+				width: 66.66%;
+			}
+			.col-md-9
+			{
+				width: 75%;
+			}
+			.col-md-10
+			{
+				width: 83.33%;
+			}
+			.col-md-11
+			{
+				width: 91.66%;
+			}
+			.col-md-12
+			{
+				width: 100%;
+			}
+		}
