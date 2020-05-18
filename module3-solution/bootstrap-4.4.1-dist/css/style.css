@@ -1,0 +1,51 @@
+body
+{
+	background-color: rgb(109,20,38);
+}
+#header-nav
+{
+	background-color: #f6b319;
+}
+.navbar-brand a:hover, .navbar-brand a:focus
+{
+	text-decoration: none;
+}
+h1
+{
+	font-weight: 600;
+	font-family: 'Noto Serif', serif;
+	color: #290177;
+}
+li
+{
+	float: right;
+	text-align: center;
+}
+#menu
+{
+	text-align: center;
+	color: #efbfbf;
+	font-size: 40px;
+}
+.box
+{
+	background-color: #efbfbf;
+	margin: 10px 5px 10px 5px;
+
+}
+h2
+{
+	text-align: center;
+	font-weight: 500;
+	text-shadow: 2px 2px 2px;
+}
+#top
+{
+	color: rgb(23,29,255);
+	font-size: 20px;
+}
+.menu-bar
+{
+	font-weight: 500;
+	color: black;
+}
