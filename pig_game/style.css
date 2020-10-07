@@ -1,0 +1,155 @@
+/******General styling********/
+*{box-sizing: border-box;}
+
+body{
+	background-image: linear-gradient(rgb(189 48 34 / 58%), rgb(80 63 63 / 40%)), url(images/back.jpg);
+	position: relative;
+	background-size: cover;
+    background-position: center;
+	margin: 0px;
+	padding: 0px;
+    height: 100vh;
+    font-family: Lato; 
+}
+#playArea{
+	width: 1000px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	min-height: 200px; 
+	height: 90%;
+	overflow: hidden;
+    background-color: #fff;
+}
+.player1,.player0{
+	float: left;
+	width: 50%;
+	min-height: 200px; 
+	height: 100%;
+	padding: 50px 0px;
+	position: relative;
+
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/***************Players Panel***************/
+
+.player-name{
+	text-align: center;
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding: 20px;
+}
+.active .player-name::after{
+	content: "\2022";
+    font-size: 60px;
+    color: #EB4D4D;
+}
+.globalScore{
+	font-size: 90px;
+	color: #e42626;
+	text-align: center;
+	padding: 20px;
+	position: absolute;
+	bottom: 40%;
+	right: 39%;
+}
+.game-play{
+	position: absolute;
+	bottom: 10%;
+	right: 37%;
+	margin: 0 auto;
+	background-color:  #EB4D4D;
+	text-align: center;
+	padding: 10px 20px;
+	height: 100px;
+}
+.current,.roundScore {
+	font-size: 30px;
+	font-weight: 500; 
+}
+.roundScore{
+	padding-top: 2px;
+	color: white;
+}
+.active{background-color: #f7f7f7;}
+.active .player-name{
+	font-size: 45px;
+	font-weight: 150;
+}
+button{
+	position: absolute;
+	left: 42%;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 200;
+	font-family: Lato;
+	cursor: pointer;
+    background: none;
+    border: none;
+    padding: 2px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+button:hover{
+	font-weight: 600;
+}
+button:focus{
+	outline: none;
+}
+i{
+	font-size: 25px;
+	display: inline-block;
+	line-height: 1;
+    vertical-align: text-top;
+    padding-right: 4px;
+    color: #e42626;
+	margin:  2px;
+	margin-top: -4px;
+	transition: margin 0.4s;
+}
+button:hover i { margin-right: 8px; }
+.dice{
+	position: absolute;
+	top: 200px;
+	left:  45%;
+	height: 100px;
+	box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.15);
+}
+
+#Rule{ 
+	font-size: 70px;
+	padding: 10px;
+	font-weight: 600px;
+	text-align: center;	
+}
+#content{
+	font-size: 25px;
+	padding: 35px;
+}
+
+
+.winner { background-color: #f7f7f7; }
+.winner .player-name{ font-weight: 600; color: #e42626; }
+
+.btn-new{ top: 50px; }
+.btn-roll{ bottom: 90px; }
+.btn-hold{ bottom: 48px;}
+.btn-start{ 
+	bottom: 48px;
+	font-size: 25px; 
+}
+.btn-start i{
+	font-size: 40px;
+	display: inline-block;
+	line-height: 1;
+    vertical-align: text-top;
+    margin-top: -8px;
+    padding-right: 4px;
+}
