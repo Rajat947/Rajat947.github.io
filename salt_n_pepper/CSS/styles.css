@@ -1,0 +1,52 @@
+a
+{ background-color:#373a40;
+  padding: 10px 20px;                             /* To Make Clickable large buttons*/
+  text-decoration: none;
+  color: #edc988;
+  font-family: verdana,sans-serif;
+  border-radius:5px;
+}
+a:hover                           /*Active should also below hower*/
+{
+  background-color: #686d76;
+  border-radius:5px;
+}
+a:active
+{
+  background-color: #cf7500;
+  border-radius:5px;
+}
+body
+{
+margin:0;
+background-color: white;
+}
+.header
+{
+  position: relative;
+  background-color: #212121;
+  height: 40%
+}
+li
+{ margin-right:4px;
+  display: inline-block;
+}
+.nav-bar
+{
+  position:absolute;
+  top:30%;
+  right:10%;
+  width:60%;
+  height: 35%;
+}
+.PASlogo
+{
+  margin: 1% 1% 1% 2%;
+  width:15%;
+}
+ul
+{
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
