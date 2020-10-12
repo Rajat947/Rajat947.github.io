@@ -1,12 +1,20 @@
+body
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
 a
 { background-color:#373a40;
-  padding: 10px 20px;                             /* To Make Clickable large buttons*/
+  padding: 10px 20px;
   text-decoration: none;
   color: #edc988;
   font-family: verdana,sans-serif;
   border-radius:5px;
 }
-a:hover                           /*Active should also below hower*/
+a:hover
 {
   background-color: #686d76;
   border-radius:5px;
@@ -15,11 +23,6 @@ a:hover                           /*Active should also below hower*/
 {
   background-color: #cf7500;
   border-radius:5px;
-}
-body
-{
-margin:0;
-background-color: white;
 }
 .header
 {
@@ -48,5 +51,5 @@ ul
 {
   list-style-type: none;
   padding: 0;
-  text-align: left;
+  text-align: right;
 }
