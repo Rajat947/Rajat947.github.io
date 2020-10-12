@@ -11,7 +11,7 @@ a:hover                           /*Active should also below hower*/
   background-color: #686d76;
   border-radius:5px;
 }
-a:active
+.active
 {
   background-color: #cf7500;
   border-radius:5px;
