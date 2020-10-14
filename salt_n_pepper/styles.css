@@ -4,7 +4,6 @@ body,html
   padding: 0px;
   height: 100%;
   box-sizing: border-box;
-  margin: 0;
   background-color: white;
 }
 /***************************1 .Header ****************************/
@@ -64,7 +63,8 @@ ul
 {
   position: relative;
   width: 100%;
-  height: 30%;
+  max-height: 350px;
+  height: 40%;
   min-height: 200px;
   background-color: #212121;
 }
@@ -73,7 +73,7 @@ ul
 
   float: left;
   width: 32%;
-  padding: 40px 0px 20px 20px;
+  padding: 60px 0px 20px 20px;
   color: white;
   letter-spacing: 1.5px;
   text-transform: capitalize;
@@ -83,20 +83,10 @@ ul
 {
   float: left;
   width: 32%;
-  padding: 40px 0px 20px 20px;
+  padding: 60px 0px 20px 20px;
   color: white;
   letter-spacing: 1.5px;
   text-transform: capitalize;
-}
-
-.footer .PASlogo
-{
-  float: left;
-  width: 23%;
-  height: 100px;
-  padding-top: 35px;
-  padding-right: 50px;
-  padding-left: 50px;
 }
 
 .line
