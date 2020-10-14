@@ -57,8 +57,24 @@ ul
   padding: 0;
   text-align: right;
 }
+/* ***********************1.2 Title Section********************** */
+.title-box
+{
+  position: relative;
+}
+.title
+{
+    text-align: center;
+    position:absolute;
+    top:10%;
+    left:0;
+    right:0;
+}
+.title-image
+{
+  width:100%;
+}
 /********************** 2 footer*****************************/
-
 .footer
 {
   position: relative;
@@ -78,7 +94,6 @@ ul
   letter-spacing: 1.5px;
   text-transform: capitalize;
 }
-
 .Address
 {
   float: left;
@@ -105,15 +120,4 @@ ul
   left: 40%;
   color: white;
   letter-spacing: 1.5px;
-}
-/********************** 3 content *******************/
-
-.content
-{
-  background-image: url("about-bg.resized.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 400%;
-  width: 100%;
 }
