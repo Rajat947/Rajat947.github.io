@@ -1,7 +1,7 @@
 body,html
 {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   height: 100%;
   box-sizing: border-box;
   background-color: white;
@@ -26,6 +26,7 @@ li
 { margin-right:4px;
   display: inline-block;
 }
+
 .nav-bar
 {
   float: right;
@@ -34,29 +35,34 @@ li
 }
 
 li a
-{ background-color:#373a40;
+{
+  background-color:#373a40;
   padding: 10px 30px;
   text-decoration: none;
   color: #edc988;
   font-family: verdana,sans-serif;
   border-radius:5px;
 }
+
 li a:hover
 {
   background-color: #686d76;
   border-radius:5px;
 }
+
 .active
 {
   background-color: #cf7500;
   border-radius:5px;
 }
+
 ul
 {
   list-style-type: none;
   padding: 0;
   text-align: right;
 }
+
 /* ***********************1.2 Title Section********************** */
 .title-box
 {
@@ -64,16 +70,20 @@ ul
 }
 .title
 {
+    font-family: 'Playball', cursive;
+    font-size: 2em;
     text-align: center;
     position:absolute;
     top:10%;
     left:0;
     right:0;
 }
+
 .title-image
 {
   width:100%;
 }
+
 /********************** 2 footer*****************************/
 .footer
 {
