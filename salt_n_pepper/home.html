@@ -11,7 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
     <!-- Font - Anton-->
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
+    <!-- Font - Lobster -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Font - Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Font - Staatliches -->
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <!-- Font-Awesome-Icons -->
     <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,9 +48,7 @@
 <div class="slideshow-container">
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <section>
-      <img src="Images/momos.jpg" style="margin:1% 4%; border-radius:12px; width:30%;height:30%;"   alt="momos-img">
-    </section>
+    <img src="Images/momos.jpg" style="margin:1% 4%; border-radius:12px; width:30%;height:30%;"   alt="momos-img">
     <div class="text-about-deal">
       <h2 style="font-size:3rem; margin-left: 3%"><i style="color:#f6830f;" class="fas fa-fire fa-1x"></i> HOT DEALS STARTING AT JUST <i style="color:#f6830f;" class="fas fa-fire fa-1x"></i></h2>
       <h4 style="font-size:3em; margin:10px;">&#x20B9; 99 <sup>*</sup></h4>
@@ -92,10 +95,10 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" activ", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += " activ";
 }
 </script>
 
@@ -104,13 +107,19 @@ function showSlides(n) {
 
     <!--     footer      -->
         <div class="footer">
-          <div class="content">
-            <p>Opening Hours</p>
-            <p>Mon-Fri : 10AM-12PM</p>
-            <p>Sat-Sun : 8AM-10PM</p>
-          </div>
-          <hr noshade>
-          <div class="after-line-footer-content">
+              <img style="width:20%;height:20%;float:right;margin:2%;" src="Logo/logo-text.png" alt="salt-n-pepper-logo">
+            <div class="address">
+              <h2 style="text-align:center;">Address</h2>
+              <p>DELHI TECHNOLOGICAL UNIVERISITY</p>
+              <p>SHAHBAD DAULATPUR, MAIN BAWANA-ROAD , DELHI</p>
+            </div>
+            <div class="opening-timings">
+              <h2 style="text-align:center;">Opening Hours</h2>
+              <p>MON-FRI : 10AM-12PM</p>
+              <p>SAT-SUN : 8AM-10PM</p>
+            </div>
+            <hr noshade>
+           <div class="after-line-footer-content">
             <pre>
             <h3>Salt 'n' Pepper 2020     <i class="fas fa-copyright"></i>  All Rights are Reserved</h3>
             </pre>
