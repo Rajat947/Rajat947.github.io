@@ -94,14 +94,6 @@ document.querySelector('.btn-new').onclick = function(){
     location.href = "Rules.html";
 }
 
-//function for startgame button
-//to start game 
-function startgame(){
-	location.href = "index.html";
-	initilize();
-}
-
-
 //function to switch players
 function nextPlayer(){
 	gameEnd=false;
