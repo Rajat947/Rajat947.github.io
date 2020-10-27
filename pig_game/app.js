@@ -58,7 +58,8 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
 
 		} else{
 			//switch control to next player
-			nextPlayer();
+			gameEnd=true;
+			setTimeout(nextPlayer,700);
 		}
 
 	}
@@ -82,6 +83,7 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
 		}
 		else{
 			//switch to next player
+			gameEnd=true;
 			nextPlayer();
 		}
 	}
@@ -102,6 +104,7 @@ function startgame(){
 
 //function to switch players
 function nextPlayer(){
+	gameEnd=false;
 	activePlayer ===0? activePlayer =1: activePlayer =0;
 	roundScore = 0;
 	document.querySelector('.player0').classList.toggle('active');
