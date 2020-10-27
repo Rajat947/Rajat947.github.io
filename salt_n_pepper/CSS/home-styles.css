@@ -103,7 +103,10 @@ ul
   Width:60%;
   text-align: center;
 }
-
+.covid-text
+{
+  margin-left:4%
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -181,6 +184,7 @@ h3
 {
   color:#fff;
   font-size: .75rem;
+  opacity:0.75;
 }
 .footer
 {
@@ -233,25 +237,17 @@ font-size: 1.2rem;
 font-family: 'Staatliches', cursive;
 font-size: 1.2rem;
 }
-p:hover
-{
-font-family: 'Staatliches', cursive;
-font-size: 1.2rem;
-color:#28abb9;
-}
 .after-line-footer-content pre
 {
   font-family: 'Montserrat', sans-serif;
 }
-h3:hover
-{
-  color: #b8de6f;
-}
 .opening-timings h2
 {
   color:#32e0c4;
+  font-family: 'Oswald', sans-serif;
 }
 .address h2
 {
   color:#32e0c4;
+  font-family: 'Oswald', sans-serif;
 }
