@@ -63,9 +63,19 @@ ul
   text-align: right;
 }
 /******* form - section ********/
+.form
+{
+  text-align: center;
+  position:absolute;
+  top:32%;
+  left:0;
+  right:0;
+}
 .form-bg
 {
-  width:100%
+  position:relative;
+  width:100%;
+  opacity: 0.5;
 }
 /********************** 3 footer*****************************/
 h3
