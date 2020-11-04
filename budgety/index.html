@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Budgety</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="top">
+	<div class="top_dec">Availabe Budget in %month% :</div>
+	<div class="Budget">+23,000</div>
+	<div class="income_block col-5 clearfix">
+		<p class="income_dec">INCOME</p>
+		<div class="right">
+			<p class="income">10000</p>
+		</div>
+	</div>
+	<div class="expense_block col-5 clearflix">
+		<p class="expense_dec">EXPENSE</p>
+		<div class="right">
+			<p class="expense">10000</p>
+			<p class="percentage">33%</p>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="add_item">
+		<select class="add_type">
+			<option value="inc" selected>+</option>
+			<option value="exp">-</option>
+		</select>
+		<input type="text" name="add_description" placeholder="Add Description" class="add_description">
+		<input type="text" name="add_value" placeholder="Add Value" class="add_value">
+		<button class="save_item"><i class="fa fa-check-circle-o" aria-hidden="true"></i></button>
+	</div>
+	<div class="Income col-4">
+		<h2 class="clearflix">Income</h2>
+		<div id="inc-0" class="fields border">
+			<p class="description">Rajat</p>
+			<div class="value">
+				<p>1000</p>
+				<button class="remove changeView" style="color: #28B9B5"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+			</div>
+		</div>
+		<div id="inc-0" class="fields border">
+			<p class="description">Rajat</p>
+			<div class="value">
+				<p>1000</p>
+				<button class="remove changeView" style="color: #28B9B5"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	</div>
+	<div class="Expenses col-4">
+		<h2 class="clearflix">Expense</h2>
+		<div id="inc-0" class="fields border">
+			<p class="description">Rajat</p>
+			<div class="value">
+				<p>1000</p>
+				<p class="percentage ">33%</p>
+				<button class="remove changeView" style="color: #FF5049" ><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+			</div>
+		</div>
+		<div id="inc-0" class="fields border">
+			<p class="description">Rajat</p>
+			<div class="value">
+				<p>1000</p>
+				<p class="percentage">33%</p>
+				<button class="remove changeView" style="color: #FF5049"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
