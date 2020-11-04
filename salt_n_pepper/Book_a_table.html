@@ -1,70 +1,112 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Pepper And Salt - A Complete Family Restaurant</title>
-    <!-- CSS home Style link -->
-    <link rel="stylesheet" href="CSS/bat-styles.css">
-    <!-- favicon link -->
-    <link rel="icon" href="Favicon/Restaurant.png">
-    <!-- Font - Playball -->
-    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
-    <!-- Font - Anton-->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <!-- Font - Lobster -->
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <!-- Font - Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <!--Font - Staatliches-->
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <!--Font - Ostwald -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
 
-    <!-- Header ahead , (logo and links)-->
-    <div class="header">
-      <img class="PASlogo" src="Logo/Logo.resized.png" alt="Pepper and salt - logo">
-      <div class="nav-bar">
-       <ul>
-         <li><a class="active" href="#">Home</a></li>
-         <li><a href="#">Book a Table</a></li>
-         <li><a href="#">Menu</a></li>
-         <li><a href="#">About Us</a></li>
-         <li><a href="#">Contact Us</a></li>
-       </ul>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <title>Pepper And Salt - A Complete Family Restaurant</title>
+  <!-- CSS home Style link -->
+  <link rel="stylesheet" href="CSS/bat-styles.css">
+  <!-- favicon link -->
+  <link rel="icon" href="Favicon/Restaurant.png">
+  <!-- Font - Playball -->
+  <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+  <!-- Font - Anton-->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <!-- Font - Lobster -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!-- Font - Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!--Font - Staatliches-->
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <!--Font - Ostwald -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!-- Header ahead , (logo and links)-->
+  <div class="header">
+    <img class="PASlogo" src="Logo/Logo.resized.png" alt="Pepper and salt - logo">
+    <div class="nav-bar">
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Book a Table</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
     </div>
-   <!-- form - section -->
+  </div>
+  <!-- form - section -->
 
-    <img class="form-bg" src="Images/bat-bg.png" alt="">
-
-
-
-
+  <img class="form-bg" src="Images/bat-bg.jpg" alt="">
+  <div class="form">
 
 
+  <form method="post" action="//submit.form" onSubmit="return validateForm();">
 
-    <!--     footer      -->
-        <div class="footer">
-              <img style="width:20%;height:20%;float:right;margin:2%;" src="Logo/logo-text.png" alt="salt-n-pepper-logo">
-            <div class="address">
-              <h2 style="text-align:center;">Address</h2>
-              <p>DELHI TECHNOLOGICAL UNIVERISITY</p>
-              <p>SHAHBAD DAULATPUR, MAIN BAWANA-ROAD , DELHI</p>
-            </div>
-            <div class="opening-timings">
-              <h2 style="text-align:center;">Opening Hours</h2>
-              <p>MON-FRI : 10AM-12PM</p>
-              <p>SAT-SUN : 8AM-10PM</p>
-            </div>
-            <hr noshade>
-           <div class="after-line-footer-content">
-            <pre>
+
+    <div class="form-title">Book a Table</div>
+    <div class="comment-title">We would be glad to reserve a table for you at our restaurant!</div>
+    <div class="middle">
+      <div class="left">
+        <div>Name<span style="color: red;"> *</span><br />
+          <input type="text" id="data_3" name="data_3" style="width : 400px;" class="form-control" />
+        </div>
+        <div>Phone<br />
+          <input type="text" id="data_4" name="data_4" style="width : 400px;" class="form-control" />
+        </div>
+        <div>Email<br />
+          <input type="text" id="data_5" name="data_5" style="width : 400px;" class="form-control" />
+        </div>
+      </div>
+  <div class="right">
+    <div>Date<span style="color: red;"> *</span><br />
+      <input type="date" id="data_6" name="data_6" style="width : 250px;" class="form-control" />
+    </div>
+    <div>Time<span style="color: red;"> *</span><br />
+      <input type="time" id="data_7" name="data_7" style="width : 250px;" class="form-control" />
+    </div>
+    <div>Number of Attendees<span style="color: red;"> *</span><br />
+      <select id="data_8" name="data_8" style="width : 250px;" class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </div>  
+    </div>
+
+</div>
+  <div class="button"><input name="skip_Submit" value="Submit" type="submit" /></div>
+</div>
+
+      <!--     footer      -->
+      <div class="footer">
+        <img style="width:20%;height:20%;float:right;margin:2%;" src="Logo/logo-text.png" alt="salt-n-pepper-logo">
+        <div class="address">
+          <h2 style="text-align:center;">Address</h2>
+          <p>DELHI TECHNOLOGICAL UNIVERISITY</p>
+          <p>SHAHBAD DAULATPUR, MAIN BAWANA-ROAD , DELHI</p>
+        </div>
+        <div class="opening-timings">
+          <h2 style="text-align:center;">Opening Hours</h2>
+          <p>MON-FRI : 10AM-12PM</p>
+          <p>SAT-SUN : 8AM-10PM</p>
+        </div>
+        <hr noshade>
+        <div class="after-line-footer-content">
+          <pre>
             <h3>Salt 'n' Pepper 2020     <i class="fas fa-copyright"></i>  All Rights are Reserved</h3>
             </pre>
-          </div>
         </div>
+      </div>
 </body>
 </html>
