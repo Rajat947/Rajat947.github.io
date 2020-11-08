@@ -1,9 +1,11 @@
+*
+{box-sizing: border-box;}
+
 body,html
 {
   margin: 0px;
   padding: 0px;
-  height: 100%;
-  box-sizing: border-box;
+  height: 100vh;
   background-color: white;
   text-align: center;
 }
@@ -18,8 +20,11 @@ body,html
 .PASlogo
 {
   padding: 10px 20px;
-  width: 200px;
-  height: 150px;
+  width: 20%;
+  min-width: 150px;
+  height: auto;
+  /*width: 200px;
+  height: 150px;*/
 }
 
 /************** 1.1 navigation bar ***************/
@@ -68,17 +73,15 @@ h3
 }
 .footer
 {
-  position: relative;
   width: 100%;
   background-color: #212121;
 }
 .footer hr
-{  position: relative;
+{
    border-top: solid 2px grey;
    opacity: 0.7;
    margin-bottom: 2px;
    width:90%;
-   top:50px;
 }
 .after-line-footer-content
 { margin-top: 2%;
@@ -89,11 +92,12 @@ h3
 .opening-timings
 {
   text-align: justify;
-  position: absolute;
   display: inline-block;
+  text-align: center;
+  vertical-align: top;
   color: white;
+  width: 33%;
   margin-bottom:10px;
-  right:39%;
 }
 .footer h2
 {
@@ -107,9 +111,11 @@ font-size: 1.2rem;
 }
 
 .address
-{ position: absolute;
+{
   display: inline-block;
-  left:2%;
+  width: 33%;
+  vertical-align: top;
+  text-align: center;
   color: white;
 }
 .address p
@@ -134,12 +140,13 @@ font-size: 1.2rem;
 /********************** 3 content *******************/
 .content
 {
-  background-image: url("../Images/about-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: %;
   width: 95%;
+  /*height: 150%;
+  #width: 100%;*/
   padding: 0px 2.5%;
 }
 .mang-img
@@ -223,4 +230,110 @@ font-size: 1.2rem;
   margin:2% 10%;
   color: white;
   font-family: 'lobster' ,cursive;
+}
+/******************************Responsiveness******************************/
+
+@media only screen and (max-width: 600px)
+{
+  .col-xs-1 {width: 8.33%;}
+  .col-xs-2 {width: 16.66%;}
+  .col-xs-3 {width: 25%;}
+  .col-xs-4 {width: 33.33%;}
+  .col-xs-5 {width: 41.66%;}
+  .col-xs-6 {width: 50%;}
+  .col-xs-7 {width: 58.33%;}
+  .col-xs-8 {width: 66.66%;}
+  .col-xs-9 {width: 75%;}
+  .col-xs-10 {width: 83.33%;}
+  .col-xs-11 {width: 91.66%;}
+  .col-xs-12 {width: 100%;}
+  .content
+  {
+    background-image: url("../Images/about_us/about_us_xs.jpg");
+    background-size: 100% 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px)
+{
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .content
+  {
+    background-image: url("../Images/about_us/about_us_s.jpg");
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px)
+{
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+  .content
+  {
+    background-image: url("../Images/about_us/about_us_m.jpg");
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px)
+{
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
+  .content
+  {
+    background-image: url("../Images/about_us/about_us_l.jpg");
+    background-size: cover;
+  }
+}
+
+
+@media only screen and (min-width: 1201px)
+{
+  .col-xl-1 {width: 8.33%;}
+  .col-xl-2 {width: 16.66%;}
+  .col-xl-3 {width: 25%;}
+  .col-xl-4 {width: 33.33%;}
+  .col-xl-5 {width: 41.66%;}
+  .col-xl-6 {width: 50%;}
+  .col-xl-7 {width: 58.33%;}
+  .col-xl-8 {width: 66.66%;}
+  .col-xl-9 {width: 75%;}
+  .col-xl-10 {width: 83.33%;}
+  .col-xl-11 {width: 91.66%;}
+  .col-xl-12 {width: 100%;}
+  .content
+  {
+    background-image: url("../Images/about_us/about_us_xl.jpg");
+    background-size: cover;
+  }
 }
