@@ -7,6 +7,7 @@ body,html
   padding: 0px;
   height: 100vh;
   background-color: white;
+  text-align: center;
 }
 /***************************1 .Header ****************************/
 .header
@@ -141,10 +142,94 @@ font-size: 1.2rem;
 {
   background-repeat: no-repeat;
   background-position: center;
-  height: 150%;
-  width: 100%;
+  background-size: cover;
+  height: %;
+  width: 95%;
+  /*height: 150%;
+  #width: 100%;*/
   padding: 0px 2.5%;
-  opacity: 0.8;
+}
+.mang-img
+{
+  width: 25%;
+  height: 25%;
+  float:left;
+  border-radius:7px;
+  margin-bottom:2%;
+}
+.ex-mang-img
+{
+  width: 20%;
+  height: 20%;
+  float:left;
+  border-radius:4px;
+  margin-bottom:2%;
+}
+.item
+{
+ display: inline-block;
+ position:relative;
+ bottom:679px;
+ margin:3%;
+}
+.caption
+{
+  color: black;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin-top:10%;
+  font-family: 'Anton', sans-serif;
+  font-weight: lighter;
+}
+.Heading
+{
+  font-size:2.5rem;
+  color: white;
+  font-family: 'lobster' ,cursive;
+  margin-top: 0;
+  padding-top: 2%;
+}
+.head-cap
+{
+  color: white;
+  font-family: 'lobster' ,cursive;
+  font-size:1.2rem;
+  margin-top: 2%;
+}
+.starting
+{
+  margin: 5% 20%;
+  text-align:justify;
+  color: white;
+  font-family: 'Playball', cursive;
+  font-size: 1.4rem;
+
+}
+.firstpara-header
+{
+  font-size: 2rem;
+  margin-left: 10%;
+  color: white;
+  font-family: 'lobster' ,cursive;
+}
+.begin-text
+{
+  text-align: justify;
+  font-size:1.3rem;
+  color: white;
+  display: inline-block;
+  width: 50%;
+  margin-left: 15%;
+  font-family: 'Playball', cursive;
+
+}
+.miss-heading
+{
+  font-size: 2rem;
+  margin:2% 10%;
+  color: white;
+  font-family: 'lobster' ,cursive;
 }
 /******************************Responsiveness******************************/
 
