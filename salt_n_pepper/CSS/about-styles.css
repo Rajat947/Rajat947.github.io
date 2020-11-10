@@ -68,8 +68,9 @@ ul
 h3
 {
   color:#fff;
-  font-size: .75rem;
+  font-size: 1.2vw;
   opacity:0.75;
+  margin: 0px;
 }
 .footer
 {
@@ -80,15 +81,18 @@ h3
 {
    border-top: solid 2px grey;
    opacity: 0.7;
-   margin-bottom: 2px;
+   margin-bottom: 2px 0px;
    width:90%;
 }
 .after-line-footer-content
-{ margin-top: 2%;
+{
   text-align:center;
-  margin: 3% auto 0;
   font-family: 'Montserrat', sans-serif;
 }
+/*.after-line-footer-content i
+{
+  color: white;
+}*/
 .opening-timings
 {
   text-align: justify;
@@ -101,19 +105,21 @@ h3
 }
 .footer h2
 {
-  font-size: 1.8rem;
+  font-size: 3vw;
   font-family: 'Lobster', cursive;
 }
 .opening-timings p
 {
 font-family: 'Staatliches', cursive;
-font-size: 1.2rem;
+/*font-size: 1.2rem;*/
+font-size: 1.67vw;
+margin: 0px 0px 1em 0px;
 }
 
 .address
 {
   display: inline-block;
-  width: 33%;
+  width: 40%;
   vertical-align: top;
   text-align: center;
   color: white;
@@ -121,21 +127,25 @@ font-size: 1.2rem;
 .address p
 {
 font-family: 'Staatliches', cursive;
-font-size: 1.2rem;
+font-size: 2vw;
+margin: 0px 0px 1em 0px;
 }
 .after-line-footer-content pre
 {
   font-family: 'Montserrat', sans-serif;
+  margin: 0px;
 }
 .opening-timings h2
 {
   color:#32e0c4;
   font-family: 'Oswald', sans-serif;
+  margin: 5px 0px 1em 0px;
 }
 .address h2
 {
   color:#32e0c4;
   font-family: 'Oswald', sans-serif;
+  margin-top: 5px;
 }
 /********************** 3 content *******************/
 .content
@@ -144,47 +154,39 @@ font-size: 1.2rem;
   background-position: center;
   background-size: cover;
   height: %;
-  width: 95%;
+  width: 100%;
   /*height: 150%;
   #width: 100%;*/
   padding: 0px 2.5%;
 }
 .mang-img
 {
-  width: 25%;
-  height: 25%;
-  float:left;
+  width: 40%;
   border-radius:7px;
-  margin-bottom:2%;
+  margin: 5px 0px;
 }
 .ex-mang-img
 {
-  width: 20%;
-  height: 20%;
-  float:left;
+  width: 40%;
   border-radius:4px;
-  margin-bottom:2%;
+  margin: 5px 0px;
 }
 .item
 {
  display: inline-block;
- position:relative;
- bottom:679px;
- margin:3%;
+ width: 40%;
 }
 .caption
 {
-  color: black;
+  color: white;
   display: block;
-  position: absolute;
-  bottom: 0;
-  margin-top:10%;
+  font-size: 1.3vw;
   font-family: 'Anton', sans-serif;
   font-weight: lighter;
 }
 .Heading
 {
-  font-size:2.5rem;
+  font-size: 8vw;
   color: white;
   font-family: 'lobster' ,cursive;
   margin-top: 0;
@@ -194,7 +196,7 @@ font-size: 1.2rem;
 {
   color: white;
   font-family: 'lobster' ,cursive;
-  font-size:1.2rem;
+  font-size: 4vw;
   margin-top: 2%;
 }
 .starting
@@ -203,32 +205,32 @@ font-size: 1.2rem;
   text-align:justify;
   color: white;
   font-family: 'Playball', cursive;
-  font-size: 1.4rem;
+  font-size: 2.5vw;
 
 }
 .firstpara-header
 {
-  font-size: 2rem;
-  margin-left: 10%;
+  font-size: 4vw;
+  margin: auto;
   color: white;
   font-family: 'lobster' ,cursive;
 }
 .begin-text
 {
   text-align: justify;
-  font-size:1.3rem;
+  font-size: 2.5vw;
   color: white;
   display: inline-block;
-  width: 50%;
-  margin-left: 15%;
+  width: 75%;
   font-family: 'Playball', cursive;
 
 }
 .miss-heading
 {
-  font-size: 2rem;
-  margin:2% 10%;
+  font-size: 4vw;
+  /*margin:2% 10%;*/
   color: white;
+  margin: auto;
   font-family: 'lobster' ,cursive;
 }
 /******************************Responsiveness******************************/
@@ -249,9 +251,31 @@ font-size: 1.2rem;
   .col-xs-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us/about_us_xs.jpg");
+    background-image: url("../Images/about_us1/about_us_xs.jpg");
     background-size: 100% 100%;
   }
+  .head-cap{font-size: 6vw;}
+  .starting{font-size: 5vw;}
+  .firstpara-header{font-size: 6vw;}
+  .begin-text{font-size: 5vw;}
+  .miss-heading{font-size: 6vw;}
+  .begin-text{font-size: 5vw;}
+  .footer h2{font-size: 5vw;}
+  .address p{font-size: 4.5vw;}
+  .opening-timings p{font-size: 4.5vw;}
+  .salt-n-pepper-copyright{font-size: 9px;}
+  .caption{font-size: 4vw;}
+  .item
+  {
+    display: block;
+    width: 100%;
+  }
+  .mang-img,.ex-mang-img
+  {
+    width: 40%;
+  }
+
+  /*h3 pre{font-size: 3vw;}*/
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px)
@@ -270,7 +294,7 @@ font-size: 1.2rem;
   .col-s-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us/about_us_s.jpg");
+    background-image: url("../Images/about_us1/about_us_s.jpg");
     background-size: cover;
   }
 }
@@ -291,7 +315,7 @@ font-size: 1.2rem;
   .col-m-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us/about_us_m.jpg");
+    background-image: url("../Images/about_us1/about_us_m.jpg");
     background-size: cover;
   }
 }
@@ -311,7 +335,7 @@ font-size: 1.2rem;
   .col-l-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us/about_us_l.jpg");
+    background-image: url("../Images/about_us1/about_us_l.jpg");
     background-size: cover;
   }
 }
@@ -333,7 +357,7 @@ font-size: 1.2rem;
   .col-xl-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us/about_us_xl.jpg");
+    background-image: url("../Images/about_us1/about_us_xl.jpg");
     background-size: cover;
   }
 }
