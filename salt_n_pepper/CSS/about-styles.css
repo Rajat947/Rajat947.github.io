@@ -7,9 +7,7 @@ body,html
   padding: 0px;
   height: 100vh;
   background-color: white;
-  /*text-align: center;*/
 }
-
 .clearflix::after
 {
   content: "";
@@ -26,17 +24,16 @@ body,html
 {
   padding: 23px 0px 52px 10px;
   width: 11%;
+  vertical-align: middle;
   min-width: 100px;
   height: auto;
-  vertical-align: middle;
-  /*width: 200px;
-  height: 150px;*/
 }
 
 .restaurant-name
 {
   display: inline-block;
   color: white;
+  vertical-align: middle;
   font-size: 5vw;
   font-family: 'lobster' ,cursive;
   margin: 0px;
@@ -131,10 +128,7 @@ h3
   text-align:center;
   font-family: 'Montserrat', sans-serif;
 }
-/*.after-line-footer-content i
-{
-  color: white;
-}*/
+
 .opening-timings
 {
   text-align: justify;
@@ -153,7 +147,6 @@ h3
 .opening-timings p
 {
 font-family: 'Staatliches', cursive;
-/*font-size: 1.2rem;*/
 font-size: 1.67vw;
 margin: 0px 0px 1em 0px;
 }
@@ -161,7 +154,7 @@ margin: 0px 0px 1em 0px;
 .address
 {
   display: inline-block;
-  width: 40%;
+  width: 33%;
   vertical-align: top;
   text-align: center;
   color: white;
@@ -188,6 +181,34 @@ margin: 0px 0px 1em 0px;
   color:#32e0c4;
   font-family: 'Oswald', sans-serif;
   margin-top: 5px;
+}
+.links
+{
+  width: 31%;
+  display: inline-block;
+  padding-top: 14px;
+}
+.facebook,.insta,.linkedln
+{
+  padding: 5px;
+}
+a
+{
+  text-decoration: none;
+  color: white;
+}
+.fa-linkedin-square,.fa-instagram,.fa-facebook-official
+{
+  font-size: 3vw;
+  vertical-align: bottom
+}
+.link-des
+{
+  font-size: 2vw;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px;
+  padding: 10px 0px 0px 1vw;
+
 }
 /********************** 3 content *******************/
 .content
@@ -304,6 +325,12 @@ margin: 0px 0px 1em 0px;
   .footer h2{font-size: 5vw;}
   .address p{font-size: 4.5vw;}
   .opening-timings p{font-size: 4.5vw;}
+  .fa-linkedin-square,.fa-instagram,.fa-facebook-official{font-size: 5vw}
+  .link-des
+  {
+    font-size: 3vw;
+    padding-left: 2vw
+  }
   .salt-n-pepper-copyright{font-size: 9px;}
   .caption{font-size: 4vw;}
   .item
