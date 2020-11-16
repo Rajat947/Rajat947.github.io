@@ -210,7 +210,26 @@ a
   padding: 10px 0px 0px 1vw;
 
 }
-/* menu - section */
+/* Menu - Section */
+.menu-full
+{
+  margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+#menu_content {
+    width: 900px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background: #fff;
+    border-radius: 5px;
+}
 .heading
 {
   font-size: 2.4rem;
@@ -222,6 +241,7 @@ a
   font-family: 'Playball', cursive;
   font-size: 1.5rem;
   text-align: center;
+  color: Black;
 }
 .headline-menu
 {
