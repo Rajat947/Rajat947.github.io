@@ -68,27 +68,37 @@ ul
   text-align: justify;
   position: absolute;
   top:32%;
-  left:500px;
+  left:325px;
+}
+.form-content
+{
+  background-color:#f6f5f5 ;
+  border-radius: 5px;
+  padding:1%;
+  border: solid 3px grey;
 }
 .form-bg
 {
   position:relative;
   width:100%;
-  opacity: 0.25;
+  opacity: 0.26;
 }
 .form-title
 {
   text-align: center;
-  margin-bottom:40px;
+  margin-bottom:10px;
   font-size: 3rem;
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Lobster', cursive;
+  color: #d37815;
 
 }
 .comment-title
 {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  font-family: 'Lobster', cursive;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-family: 'Playball', cursive;
+  color: #a05344;
+  font-weight: bolder;
 }
 .label
 {
@@ -97,7 +107,7 @@ ul
   font-size: 1.2rem;
   width:135px;
   text-align: right;
-  color:black;
+  color:#222831;
 }
 
 input[type=text],select,input[type=date],input[type=time] {
@@ -105,27 +115,29 @@ input[type=text],select,input[type=date],input[type=time] {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 3px solid #ccc;
+  border: 3px solid grey;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
+  border-radius: 4px;
 }
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 3px solid #ccc;
+  border: 3px solid grey;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
+  border-radius: 4px;
 }
 input[type=text]:focus,input[type=date]:focus,input[type=time]:focus,select:focus, textarea:focus {
   border: 3px solid #cf7500;
 }
 
 input[type=submit] {
-  background-color: #000;
+  background-color: #212121;
   margin-top: 20px;
   color: white;
   padding: 12px 20px;
@@ -146,8 +158,9 @@ input[type=submit]:hover
 {
   display: block;
   position: relative;
-  top: 15px;
   text-align:center;
+  bottom:10px;
+
 }
 
 

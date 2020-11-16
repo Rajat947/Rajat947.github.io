@@ -6,8 +6,9 @@ body,html
   margin: 0px;
   padding: 0px;
   height: 100vh;
-  background-color: white;
+
 }
+
 .clearflix::after
 {
   content: "";
@@ -219,7 +220,7 @@ a
     font-weight: inherit;
     font-style: inherit;
     font-size: 100%;
-    font-family: inherit;
+
     vertical-align: baseline;
 }
 #menu_content {
@@ -227,21 +228,22 @@ a
     padding-bottom: 30px;
     margin-top: 20px;
     margin-left: 30px;
-    background: #fff;
     border-radius: 5px;
+    background: #f5b461;
 }
 .heading
 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-family: 'Lobster', cursive;
   text-align: center;
+  color: #d37815;
 }
 .caption-head
 {
   font-family: 'Playball', cursive;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: center;
-  color: Black;
+  color: #dd9866;
 }
 .headline-menu
 {
@@ -249,6 +251,7 @@ a
   margin: 7% 5%;
   font-size:1.5rem;
   font-family: 'Playball', cursive;
+  color: #c6b497;
 
 }
 .main-heading-menu
@@ -258,9 +261,10 @@ a
     font-family: 'Anton', sans-serif;
 }
 .bor img {
-    border: 1px solid #4C0B0B;
+    border: none;
     margin: 3px;
     padding: 3px;
+    border-radius: 7px;
 }
 .clear {
     clear: both;
@@ -278,9 +282,10 @@ td
     padding: 0;
     border: 0;
     vertical-align: baseline;
-    font-family: 'Redressed', cursive;
-    font-size: 1.1rem;
+    font-family: 'Fondamento', cursive;
+    font-size: 1rem;
 }
+
 .read-more-text
 {
   color: black;
