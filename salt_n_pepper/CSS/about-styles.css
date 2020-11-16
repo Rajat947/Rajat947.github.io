@@ -7,7 +7,11 @@ body,html
   padding: 0px;
   height: 100vh;
   background-color: white;
-  text-align: center;
+}
+.clearflix::after
+{
+  content: "";
+  clear: both;
 }
 /***************************1 .Header ****************************/
 .header
@@ -15,64 +19,100 @@ body,html
   position: relative;
   width: 100%;
   background-color: #212121;
-  height: 170px;
 }
 .PASlogo
 {
-  padding: 10px 20px;
-  width: 20%;
-  min-width: 150px;
+  padding: 23px 0px 52px 10px;
+  width: 11%;
+  vertical-align: middle;
+  min-width: 100px;
   height: auto;
-  /*width: 200px;
-  height: 150px;*/
 }
 
-/************** 1.1 navigation bar ***************/
-li
-{ margin-right:4px;
-  display: inline-block;
-}
-.nav-bar
+.restaurant-name
 {
-  float: right;
-  padding-top: 50px;
-  padding-right: 20px;
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+  font-size: 5vw;
+  font-family: 'lobster' ,cursive;
+  margin: 0px;
+  padding-right: 23px;
+}
+.change .bar1{
+  -webkit-transform: rotate(-45deg) translate(-12px, 10px);
+  transform: rotate(-45deg) translate(-12px, 10px);
+  transition: transform 0.3s;
 }
 
-li a
-{ background-color:#373a40;
-  padding: 10px 30px;
-  text-decoration: none;
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -6px);
+  transform: rotate(45deg) translate(-8px, -6px);
+  transition: transform 0.3s;
+}
+
+.menu-button
+{
+  display: none;
+  float: right;
+  margin: 40px 10px 10px 10px;
+}
+.menu-button:hover .menu-line
+{
+  background-color: #686d76
+}
+.menu-line
+{
+  width: 40px;
+  height: 1px;
+  margin: 0px 0px 7px 0px;
+  background-color: #373a40;
+  padding: 3px;
+}
+/************** 1.1 navigation bar ***************/
+button
+{
+  background-color: #212121;
   color: #edc988;
   font-family: verdana,sans-serif;
-  border-radius:5px;
+  border: none;
+  outline: none;
+  font-size: 3vw;
+  padding: 0px 19% 0px 0px;
 }
-li a:hover
+.name
 {
-  background-color: #686d76;
-  border-radius:5px;
+  font-size: 16px;
+  margin: 2px 0px 0px 0px;
 }
-.active
+
+.active-button
 {
-  background-color: #cf7500;
+  background-color: #edc988;
+  color: #212121;
   border-radius:5px;
 }
 ul
 {
+  text-align: center;
   list-style-type: none;
   padding: 0;
-  text-align: right;
+  margin: 0px;
 }
 /********************** 2 footer*****************************/
 
 h3
 {
   color:#fff;
-  font-size: .75rem;
+  font-size: 1.2vw;
   opacity:0.75;
+  margin: 0px;
 }
 .footer
 {
+  text-align: center;
   width: 100%;
   background-color: #212121;
 }
@@ -80,15 +120,15 @@ h3
 {
    border-top: solid 2px grey;
    opacity: 0.7;
-   margin-bottom: 2px;
+   margin-bottom: 2px 0px;
    width:90%;
 }
 .after-line-footer-content
-{ margin-top: 2%;
+{
   text-align:center;
-  margin: 3% auto 0;
   font-family: 'Montserrat', sans-serif;
 }
+
 .opening-timings
 {
   text-align: justify;
@@ -101,13 +141,14 @@ h3
 }
 .footer h2
 {
-  font-size: 1.8rem;
+  font-size: 3vw;
   font-family: 'Lobster', cursive;
 }
 .opening-timings p
 {
 font-family: 'Staatliches', cursive;
-font-size: 1.2rem;
+font-size: 1.67vw;
+margin: 0px 0px 1em 0px;
 }
 
 .address
@@ -121,21 +162,53 @@ font-size: 1.2rem;
 .address p
 {
 font-family: 'Staatliches', cursive;
-font-size: 1.2rem;
+font-size: 2vw;
+margin: 0px 0px 1em 0px;
 }
 .after-line-footer-content pre
 {
   font-family: 'Montserrat', sans-serif;
+  margin: 0px;
 }
 .opening-timings h2
 {
   color:#32e0c4;
   font-family: 'Oswald', sans-serif;
+  margin: 5px 0px 1em 0px;
 }
 .address h2
 {
   color:#32e0c4;
   font-family: 'Oswald', sans-serif;
+  margin-top: 5px;
+}
+.links
+{
+  width: 31%;
+  display: inline-block;
+  padding-top: 14px;
+}
+.facebook,.insta,.linkedln
+{
+  padding: 5px;
+}
+a
+{
+  text-decoration: none;
+  color: white;
+}
+.fa-linkedin-square,.fa-instagram,.fa-facebook-official
+{
+  font-size: 3vw;
+  vertical-align: bottom
+}
+.link-des
+{
+  font-size: 2vw;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px;
+  padding: 10px 0px 0px 1vw;
+
 }
 /********************** 3 content *******************/
 .content
@@ -143,48 +216,39 @@ font-size: 1.2rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: %;
-  width: 95%;
-  /*height: 150%;
-  #width: 100%;*/
+  width: 100%;
+  text-align: center;
   padding: 0px 2.5%;
 }
 .mang-img
 {
-  width: 25%;
-  height: 25%;
-  float:left;
+  width: 40%;
   border-radius:7px;
-  margin-bottom:2%;
+  margin: 5px 0px;
 }
 .ex-mang-img
 {
-  width: 20%;
-  height: 20%;
-  float:left;
+  width: 40%;
   border-radius:4px;
-  margin-bottom:2%;
+  margin: 5px 0px;
 }
 .item
 {
  display: inline-block;
- position:relative;
- bottom:679px;
- margin:3%;
+ width: 40%;
 }
 .caption
 {
-  color: black;
+  color: white;
   display: block;
-  position: absolute;
-  bottom: 0;
-  margin-top:10%;
+  font-size: 1.3vw;
+  padding-bottom: 20px;
   font-family: 'Anton', sans-serif;
   font-weight: lighter;
 }
 .Heading
 {
-  font-size:2.5rem;
+  font-size: 8vw;
   color: white;
   font-family: 'lobster' ,cursive;
   margin-top: 0;
@@ -194,7 +258,7 @@ font-size: 1.2rem;
 {
   color: white;
   font-family: 'lobster' ,cursive;
-  font-size:1.2rem;
+  font-size: 4vw;
   margin-top: 2%;
 }
 .starting
@@ -203,32 +267,32 @@ font-size: 1.2rem;
   text-align:justify;
   color: white;
   font-family: 'Playball', cursive;
-  font-size: 1.4rem;
+  font-size: 2.5vw;
 
 }
 .firstpara-header
 {
-  font-size: 2rem;
-  margin-left: 10%;
+  font-size: 4vw;
+  margin: auto;
   color: white;
   font-family: 'lobster' ,cursive;
 }
 .begin-text
 {
   text-align: justify;
-  font-size:1.3rem;
+  font-size: 2.5vw;
   color: white;
   display: inline-block;
-  width: 50%;
-  margin-left: 15%;
+  width: 75%;
   font-family: 'Playball', cursive;
 
 }
 .miss-heading
 {
-  font-size: 2rem;
-  margin:2% 10%;
+  font-size: 4vw;
+  /*margin:2% 10%;*/
   color: white;
+  margin: auto;
   font-family: 'lobster' ,cursive;
 }
 /******************************Responsiveness******************************/
@@ -249,9 +313,75 @@ font-size: 1.2rem;
   .col-xs-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us/about_us_xs.jpg");
+    background-image: url("../Images/about_us1/about_us_xs.jpg");
     background-size: 100% 100%;
   }
+  .head-cap{font-size: 6vw;}
+  .starting{font-size: 5vw;}
+  .firstpara-header{font-size: 6vw;}
+  .begin-text{font-size: 5vw;}
+  .miss-heading{font-size: 6vw;}
+  .begin-text{font-size: 5vw;}
+  .footer h2{font-size: 5vw;}
+  .address p{font-size: 4.5vw;}
+  .opening-timings p{font-size: 4.5vw;}
+  .fa-linkedin-square,.fa-instagram,.fa-facebook-official{font-size: 5vw}
+  .link-des
+  {
+    font-size: 3vw;
+    padding-left: 2vw
+  }
+  .salt-n-pepper-copyright{font-size: 9px;}
+  .caption{font-size: 4vw;}
+  .item
+  {
+    display: block;
+    width: 100%;
+  }
+  .mang-img,.ex-mang-img
+  {
+    width: 40%;
+  }
+  .menu-button{display: block;}
+  .name
+  {
+    font-size: 17px;
+    display: inline-block;
+    margin: 2px 0px;
+    padding: 1px 10px;
+    vertical-align: middle;
+  }
+  i{vertical-align: middle;}
+  li
+  {
+    background-color: #373a40;
+    border: 0.5px inset #5a6377;
+  }
+  button
+  {
+    font-size: 6vw;
+    padding: 5px 0px;
+    background-color: #373a40;
+  }
+  li:hover
+  {
+    background-color: #4f5258;
+  }
+  li:hover button{background-color: #4f5258;}
+  .active-bar,.active-bar button,.active-bar:hover,.active-button:hover,.active-bar:hover button
+  {
+    background-color: #edc988;
+    border-radius: 5px;
+  }
+  .display-class{display: none;}
+  .PASlogo
+  {
+    padding: 23px 0px  38px 3px;
+    width: 23%;
+    min-width: 70px;
+  }
+  .restaurant-name{font-size: 8vw;}
+  /*h3 pre{font-size: 3vw;}*/
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px)
@@ -270,9 +400,21 @@ font-size: 1.2rem;
   .col-s-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us/about_us_s.jpg");
+    background-image: url("../Images/about_us1/about_us_s.jpg");
     background-size: cover;
   }
+  li
+  {
+    display: inline-block;
+    margin-top: 28px;
+    margin-right: 0px;
+
+  }
+  button{font-size: 3.5vw;}
+  .name{font-size: 13px;}
+  .nav-bar{float: right;}
+  button:hover{color: #adadad;}
+  .active-button:hover{color: #212121;}
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px)
@@ -291,9 +433,18 @@ font-size: 1.2rem;
   .col-m-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us/about_us_m.jpg");
+    background-image: url("../Images/about_us1/about_us_m.jpg");
     background-size: cover;
   }
+  li
+  {
+    display: inline-block;
+    margin-top: 37px;
+  }
+  .name {font-size: 15px;}
+  .nav-bar{float: right;}
+  button:hover{color: #adadad;}
+  .active-button:hover{color: #212121;}
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px)
 {
@@ -311,9 +462,18 @@ font-size: 1.2rem;
   .col-l-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us/about_us_l.jpg");
+    background-image: url("../Images/about_us1/about_us_l.jpg");
     background-size: cover;
   }
+  li
+  {
+    display: inline-block;
+    margin-top: 41px;
+  }
+  .nav-bar{float: right;}
+  .name {font-size: 15px;}
+  button:hover{color: #adadad;}
+  .active-button:hover{color: #212121;}
 }
 
 
@@ -333,7 +493,22 @@ font-size: 1.2rem;
   .col-xl-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us/about_us_xl.jpg");
+    background-image: url("../Images/about_us1/about_us_xl.jpg");
     background-size: cover;
   }
+  li{
+    display: inline-block;
+    margin: 55px 19px 0px 10px;
+  }
+  button
+  {
+    font-size: 3.5vw;
+    padding-right: 7%;
+  }
+  .nav-bar{float: right;}
+  .name {font-size: 1vw;}
+  button:hover{color: #adadad;}
+  .active-button:hover{color: #212121;}
+/*  li button.active-button button:hover{color: #212121;}
+*/
 }
