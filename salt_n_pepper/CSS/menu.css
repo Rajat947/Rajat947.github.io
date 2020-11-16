@@ -8,7 +8,6 @@ body,html
   height: 100vh;
   background-color: white;
 }
-
 .clearflix::after
 {
   content: "";
@@ -102,8 +101,6 @@ ul
   padding: 0;
   margin: 0px;
 }
-
-
 /********************** 2 footer*****************************/
 
 h3
@@ -213,10 +210,8 @@ a
   padding: 10px 0px 0px 1vw;
 
 }
-
-
 /* menu - section */
-/*.heading
+.heading
 {
   font-size: 2.4rem;
   font-family: 'Lobster', cursive;
@@ -269,7 +264,7 @@ td
 .read-more-text
 {
   color: black;
-}*/
+}
 /******************************Responsiveness******************************/
 
 @media only screen and (max-width: 600px)
@@ -484,4 +479,6 @@ td
   .name {font-size: 1vw;}
   button:hover{color: #adadad;}
   .active-button:hover{color: #212121;}
+/*  li button.active-button button:hover{color: #212121;}
+*/
 }
