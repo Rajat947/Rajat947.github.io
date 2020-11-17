@@ -21,7 +21,7 @@
     <!-- Font - Ostwald -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <!-- Font-Awesome-Icons -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
@@ -53,73 +53,103 @@
           <h1>Welcome to the Complete and Finest Restaurant</h1>
       </div>
     </div>
-   <!-- Carousel -->
-   <!-- Slideshow container -->
-<div class="slideshow-container">
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <img src="Images/momos.jpg" style="margin:1% 4%; border-radius:12px; width:30%;height:30%;"   alt="momos-img">
-    <div class="text-about-deal">
-      <h2 style="font-size:3rem; margin-left: 3%"><i style="color:#f6830f;" class="fas fa-fire fa-1x"></i> HOT DEALS STARTING AT JUST <i style="color:#f6830f;" class="fas fa-fire fa-1x"></i></h2>
-      <h4 style="font-size:3em; margin:10px;">&#x20B9; 99 <sup>*</sup></h4>
-    </div>
+    <hr class="section-break">
+<!-- caraousel - hotdeals + food gallery -->
+<!-- Slideshow container -->
+<div class="slideshow-container" style="margin-top:5%">
+<!-- Full-width images with number and caption text -->
+<div class="mySlides1 fade">
+ <img src="Images/momos.jpg" style="margin:1% 4%; border-radius:12px; width:30%;height:30%;" alt="momos-img">
+ <div class="text-about-deal">
+   <h2 style="font-size:3rem; margin-left: 50px;"><i style="color:#fd8c04;" class="fab fa-hotjar fa-1x"></i> HOT DEALS STARTING AT JUST <i style="color:#fd8c04;" class="fab fa-hotjar fa-1x"></i></h2>
+   <h4 style="font-size:3em; margin:10px;">&#x20B9; 99 <sup>*</sup></h4>
+ </div>
+</div>
 
-  </div>
+<div class="mySlides1 fade">
+ <img src="Images/hand-sanitize.jpg" style="margin:1% 4%; border-radius:12px; width:25%;height:25%;" alt="bowl-img">
+ <div class="text-about-deal">
+   <h2 style="font-size:3rem; margin-left: 5%">DUE TO COVID-19</h2>
+   <p class="covid-text">We have taken appropriate measures by sanitising our hands as well as by regular temperature checks.</p>
+   <p>Please Maintain Social Distancing while in the Restaurant.</p>
+ </div>
+</div>
 
-  <div class="mySlides fade">
-    <img src="Images/hand-sanitize.jpg" style="margin:1% 4%; border-radius:12px; width:25%;height:25%;" alt="bowl-img">
-    <div class="text-about-deal">
-      <h2 style="font-size:3rem; margin-left: 5%">DUE TO COVID-19</h2>
-      <p class="covid-text">We have taken appropriate measures by sanitising our hands as well as by regular temperature check.</p>
-      <p>Please Maintain Social Distancing while in Row in the Restaurant.</p>
-    </div>
-  </div>
-<!--
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="img3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div> -->
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 </div>
 <br>
+<hr class="section-break">
+<!-- banner section -->
+    <div class="gallery-img">
+      <h2><i style="color:#f5b461;" class="fas fa-pizza-slice"></i>  Food Gallery <i style="color:#f5b461;" class="fas fa-pizza-slice"></i></h2>
+      <img class="banner" src="Images/banner.jpg" alt="banner-food-gallery">
+    </div>
+
+
+
+<div class="slideshow-container">
+<div class="mySlides2 fade">
+ <img src="Images/2.jpg" style="vertical-align: middle; border-radius:12px; width:25%;margin:1% 4%; ">
+ <img src="Images/1.jpg" style="vertical-align: middle; border-radius:12px; width:25%;margin:1% 4%;">
+ <img src="Images/3.jpg" style="vertical-align: middle; border-radius:12px; width:25%;margin:1% 3% ;">
+</div>
+
+<div class="mySlides2 fade">
+ <img src="Images/4.jpg" style="border-radius:12px; width:25%; height:10%;margin:1% 4%; ">
+ <img src="Images/5.jpg" style="border-radius:12px; width:25%; height:10%;margin:1% 4%;">
+ <img src="Images/6.jpg" style="border-radius:12px; width:25%; height:10%;margin:1% 4%;">
+</div>
+
+<div class="mySlides2 fade">
+ <img src="Images/7.jpg" style="border-radius:12px; width:25%; height:10%;margin:1% 4%; ">
+ <img src="Images/8.jpg" style="border-radius:12px; width:25%; height:10%;margin:1% 4%;">
+ <img src="Images/9.jpg" style="border-radius:12px; width:25%; height:10%;margin:1% 4%;">
+</div>
+
+<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
 <!-- Javascript -->
 
-<!-- <script>
-var slideIndex = 1;
-showSlides(slideIndex);
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, no) {
+showSlides(slideIndex[no] += n, no);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function showSlides(n, no) {
+var i;
+var x = document.getElementsByClassName(slideId[no]);
+if (n > x.length) {slideIndex[no] = 1}
+if (n < 1) {slideIndex[no] = x.length}
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";
 }
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" activ", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " activ";
+x[slideIndex[no]-1].style.display = "block";
 }
-</script> -->
-
-
-
-
+</script>
+<hr class="section-break">
+<!-- How to reach us -->
+<div class="map-reach-section">
+<div class="map">
+ <!-- embedded map -->
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55967.974126758425!2d77.10237054078925!3d28.74946523903954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01212a67c965%3A0x87d470ca1c30d1b0!2sDelhi%20Technological%20University!5e0!3m2!1sen!2sin!4v1604652630633!5m2!1sen!2sin"  width="500" height="350" frameborder="0" style="margin:4%" ></iframe>
+</div>
+<div class="reach-us">
+ <h2>How to reach us !</h2>
+ <p><i style="color:#706c61;" class="fas fa-mobile-alt"></i> PHONE NO : +91 7428148XXX</p>
+ <p><i style="color:#706c61;" class="fas fa-fax"></i> FAX NO : +91 8382467342</p>
+ <p><i style="color:#706c61;" class="fas fa-map-marked-alt"></i> ADDRESS : Delhi Technological University, Shahbad Dairy</p>
+</div>
+</div>
+<hr class="section-break">
+<!-- footer -->
 <div class="footer">
     <div class="address">
       <h2 style="text-align:center;">Address</h2>
@@ -143,43 +173,5 @@ function showSlides(n) {
     </pre>
   </div>
 </div>
-<script>
-  var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" activ", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " activ";
-}
-
-function changeFn(x) {
-  var y=document.querySelector(".nav-bar");
-  y.classList.toggle("display-class")
-  x.classList.toggle("change");
-  var z=document.querySelectorAll(".menu-line")
-  for(var i=0;i<z.length;i++){
-    z[i].classList.toggle("active");
-  }
-}
-</script>
 </body>
 </html>

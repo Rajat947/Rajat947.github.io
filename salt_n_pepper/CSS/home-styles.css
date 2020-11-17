@@ -13,6 +13,13 @@ body,html
   content: "";
   clear: both;
 }
+.section-break
+{
+  border: dotted #ffa372 6px;
+  border-bottom: none;
+  width: 10%;
+  margin: 50px auto 50px auto;
+}
 /***************************1 .Header ****************************/
 .header
 {
@@ -108,35 +115,32 @@ ul
 }
 .title
 {
-    font-family: 'Playball', cursive;
+    font-family: 'Lobster', cursive;
     font-size: 2rem;
     text-align: center;
     position:absolute;
     top:10%;
     left:0;
     right:0;
+    color:#d37815;
 }
 
 .title-image
 {
   width:100%;
   opacity: 0.65;
+
 }
 /***********************2 Carousel**************************/
 
-.slideshow-container {
-  position: relative;
-  margin:1% auto 5% auto;
-  background-color: black;
-}
 .text-about-deal
 {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Staatliches', cursive;
   position: absolute;
-  color:#fff;
+  color:#ffda77;
   right:10%;
   top:1%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding:5px 10px;
   Width:60%;
   text-align: center;
@@ -145,15 +149,29 @@ ul
 {
   margin-left:4%
 }
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none;}
+/* img {vertical-align: middle;} */
+
+/* Slideshow container */
+.slideshow-container {
+
+  position: relative;
+  background-color: #222222;
+  margin: 4% 7% 0% 7%;
+  border-radius: 7px;
+
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
-  color: white;
+  margin-top: -22px;
+  color: #9ddfd3;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -167,10 +185,12 @@ ul
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a grey background color */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #f1f1f1;
+  color: black;
 }
+
 
 /* Caption text */
 .text {
@@ -216,7 +236,63 @@ ul
   from {opacity: .4}
   to {opacity: 1}
 }
+/* reach us section */
+.map iframe
+{
+  border-radius: 5px;
+  float: left;
+  overflow: hidden;
 
+}
+
+.map-reach-section
+{
+  position:relative;
+  padding: 20px;
+  height:80%;
+
+}
+.reach-us h2
+{
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+.reach-us
+{
+  text-align: justify;
+  display: inline-block;
+  margin: 6% 4% 7% 8%;
+  font-family: 'Staatliches', cursive;
+  font-size: 1.3rem;
+  color: #d37815;
+}
+.reach-us p
+{
+  color:#333333;
+}
+.banner
+{
+  position: relative;
+  width: 100%;
+  height: 15rem;
+  padding: 0;
+  margin: 0;
+
+}
+.gallery-img h2
+{
+  position: relative;
+  top: 180px;
+  z-index: 1;
+  font-family: 'lobster', cursive;
+  text-align: center;
+  font-size: 2.7rem;
+  color: #d37815;
+}
+iframe
+{
+  border: 3px dotted grey;
+}
 /********************** 3 footer*****************************/
 
 h3
