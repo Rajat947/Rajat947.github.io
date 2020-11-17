@@ -239,49 +239,49 @@ a
 }
 .caption
 {
-  color: white;
+  color: #ffbb91;
   display: block;
   font-size: 1.3vw;
   padding-bottom: 20px;
-  font-family: 'Anton', sans-serif;
-  font-weight: lighter;
+  font-family: 'Monda', sans-serif;
+  font-weight: bold;
 }
 .Heading
 {
-  font-size: 8vw;
-  color: white;
+  font-size: 3rem;
+  color: #d37815;
   font-family: 'lobster' ,cursive;
   margin-top: 0;
   padding-top: 2%;
 }
 .head-cap
 {
-  color: white;
-  font-family: 'lobster' ,cursive;
-  font-size: 4vw;
+  font-family: 'Playball', cursive;
+font-size: 2rem;
+color: #dd9866;
   margin-top: 2%;
 }
 .starting
 {
   margin: 5% 20%;
   text-align:justify;
-  color: white;
+  color: #f3eac2;
   font-family: 'Playball', cursive;
   font-size: 2.5vw;
 
 }
 .firstpara-header
 {
-  font-size: 4vw;
+  font-size: 3rem;
   margin: auto;
-  color: white;
+  color: #cad315;
   font-family: 'lobster' ,cursive;
 }
 .begin-text
 {
   text-align: justify;
   font-size: 2.5vw;
-  color: white;
+  color: #f3eac2;
   display: inline-block;
   width: 75%;
   font-family: 'Playball', cursive;
@@ -291,7 +291,7 @@ a
 {
   font-size: 4vw;
   /*margin:2% 10%;*/
-  color: white;
+  color: #cad315;
   margin: auto;
   font-family: 'lobster' ,cursive;
 }
