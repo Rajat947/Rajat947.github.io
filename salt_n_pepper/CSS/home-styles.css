@@ -6,7 +6,7 @@ body,html
   margin: 0px;
   padding: 0px;
   height: 100vh;
-  background-color: white;
+  background-color:#edc988;
 }
 .clearflix::after
 {
@@ -128,7 +128,7 @@ ul
 .title-image
 {
   width:100%;
-  opacity: 0.65;
+  /* opacity: 0.65; */
 
 }
 /***********************2 Carousel**************************/
@@ -239,10 +239,10 @@ ul
 /* reach us section */
 .map iframe
 {
-  border-radius: 5px;
+  border-radius: 7px;
   float: left;
   overflow: hidden;
-
+  border: 3px dotted #ffa372;
 }
 
 .map-reach-section
@@ -288,10 +288,6 @@ ul
   text-align: center;
   font-size: 2.7rem;
   color: #d37815;
-}
-iframe
-{
-  border: 3px dotted grey;
 }
 /********************** 3 footer*****************************/
 
