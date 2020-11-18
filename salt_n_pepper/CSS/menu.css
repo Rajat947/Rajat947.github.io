@@ -361,6 +361,7 @@ td
   {
     font-size: 6vw;
     padding: 5px 0px;
+     width: 100%;
     background-color: #373a40;
   }
   li:hover
