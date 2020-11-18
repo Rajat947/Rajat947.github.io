@@ -1,10 +1,17 @@
+*
+{box-sizing: border-box;}
+
 body,html
 {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
   background-color: white;
+}
+.clearflix::after
+{
+  content: "";
+  clear: both;
 }
 /***************************1 .Header ****************************/
 .header
@@ -12,69 +19,210 @@ body,html
   position: relative;
   width: 100%;
   background-color: #212121;
-  height: 170px;
 }
 .PASlogo
 {
-  padding: 10px 10px;
-  width: 200px;
-  height: 150px;
+  padding: 23px 0px 52px 10px;
+  width: 11%;
+  vertical-align: middle;
+  min-width: 100px;
+  height: auto;
 }
 
-/************** 1.1 navigation bar ***************/
-li
-{ margin-right:4px;
+.restaurant-name
+{
   display: inline-block;
+  color: white;
+  vertical-align: middle;
+  font-size: 5vw;
+  font-family: 'lobster' ,cursive;
+  margin: 0px;
+  padding-right: 23px;
+}
+.change .bar1{
+  -webkit-transform: rotate(-45deg) translate(-12px, 10px);
+  transform: rotate(-45deg) translate(-12px, 10px);
+  transition: transform 0.3s;
 }
 
-.nav-bar
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -6px);
+  transform: rotate(45deg) translate(-8px, -6px);
+  transition: transform 0.3s;
+}
+
+.menu-button
 {
+  display: none;
   float: right;
-  padding-top: 50px;
-  padding-right: 20px;
+  margin: 40px 10px 10px 10px;
 }
-
-li a
+.menu-button:hover .menu-line
 {
-  background-color:#373a40;
-  padding: 10px 30px;
-  text-decoration: none;
+  background-color: #686d76
+}
+.menu-line
+{
+  width: 40px;
+  height: 1px;
+  margin: 0px 0px 7px 0px;
+  background-color: #373a40;
+  padding: 3px;
+}
+/************** 1.1 navigation bar ***************/
+button
+{
+  background-color: #212121;
   color: #edc988;
   font-family: verdana,sans-serif;
-  border-radius:5px;
+  border: none;
+  outline: none;
+  font-size: 3vw;
+  padding: 0px 19% 0px 0px;
 }
-
-li a:hover
+.name
 {
-  background-color: #686d76;
-  border-radius:5px;
+  font-size: 16px;
+  margin: 2px 0px 0px 0px;
 }
 
-.active
+.active-button
 {
-  background-color: #cf7500;
+  background-color: #edc988;
+  color: #212121;
   border-radius:5px;
 }
-
 ul
 {
+  text-align: center;
   list-style-type: none;
   padding: 0;
-  text-align: right;
+  margin: 0px;
+}
+/********************** 2 footer*****************************/
+
+h3
+{
+  color:#fff;
+  font-size: 1.2vw;
+  opacity:0.75;
+  margin: 0px;
+}
+.footer
+{
+  text-align: center;
+  width: 100%;
+  background-color: #212121;
+}
+.footer hr
+{
+   border-top: solid 2px grey;
+   opacity: 0.7;
+   margin-bottom: 2px 0px;
+   width:90%;
+}
+.after-line-footer-content
+{
+  text-align:center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.opening-timings
+{
+  text-align: justify;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  color: white;
+  width: 33%;
+  margin-bottom:10px;
+}
+.footer h2
+{
+  font-size: 3vw;
+  font-family: 'Lobster', cursive;
+}
+.opening-timings p
+{
+font-family: 'Staatliches', cursive;
+font-size: 1.67vw;
+margin: 0px 0px 1em 0px;
+}
+
+.address
+{
+  display: inline-block;
+  width: 33%;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+}
+.address p
+{
+font-family: 'Staatliches', cursive;
+font-size: 2vw;
+margin: 0px 0px 1em 0px;
+}
+.after-line-footer-content pre
+{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
+.opening-timings h2
+{
+  color:#32e0c4;
+  font-family: 'Oswald', sans-serif;
+  margin: 5px 0px 1em 0px;
+}
+.address h2
+{
+  color:#32e0c4;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 5px;
+}
+.links
+{
+  width: 31%;
+  display: inline-block;
+  padding-top: 14px;
+}
+.facebook,.insta,.linkedln
+{
+  padding: 5px;
+}
+a
+{
+  text-decoration: none;
+  color: white;
+}
+.fa-linkedin-square,.fa-instagram,.fa-facebook-official
+{
+  font-size: 3vw;
+  vertical-align: bottom
+}
+.link-des
+{
+  font-size: 2vw;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px;
+  padding: 10px 0px 0px 1vw;
+
 }
 /******* form - section ********/
 .form
 {
-  text-align: justify;
-  position: absolute;
-  top:32%;
-  left:325px;
+  text-align: center;
+  margin: 20px auto;
+  width: 90%;
 }
 .form-content
 {
   background-color:#f6f5f5 ;
   border-radius: 5px;
-  padding:1%;
+  margin: 10px auto;
+  padding:1% 0px;
   border: solid 3px grey;
 }
 .form-bg
@@ -105,13 +253,12 @@ ul
   display: inline-block;
   font-family: 'Anton', sans-serif;
   font-size: 1.2rem;
-  width:135px;
-  text-align: right;
+  width:30%;
   color:#222831;
 }
 
 input[type=text],select,input[type=date],input[type=time] {
-  width: 100%;
+  width: 68%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -121,17 +268,8 @@ input[type=text],select,input[type=date],input[type=time] {
   outline: none;
   border-radius: 4px;
 }
-input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 3px solid grey;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  outline: none;
-  border-radius: 4px;
-}
+
+
 input[type=text]:focus,input[type=date]:focus,input[type=time]:focus,select:focus, textarea:focus {
   border: 3px solid #cf7500;
 }
@@ -163,76 +301,231 @@ input[type=submit]:hover
 
 }
 
+/******************************Responsiveness******************************/
 
-/********************** 3 footer*****************************/
-h3
+@media only screen and (max-width: 600px)
 {
-  color:#fff;
-  font-size: .75rem;
-  opacity:0.75;
-}
-.footer
-{
-  width: 100%;
-  background-color: #212121;
-}
-.footer hr
-{
-  position: relative;
-   border-top: solid 2px grey;
-   opacity: 0.7;
-   margin-bottom: 2px;
-   width:90%;
-   top:50px;
-}
-.after-line-footer-content
-{ margin-top: 2%;
-  text-align:center;
-  margin: 3% auto 0;
-  font-family: 'Montserrat', sans-serif;
-}
-.opening-timings
-{
-  text-align: justify;
-  position: absolute;
-  display: inline-block;
-  color: white;
-  margin-bottom:10px;
-  right:39%;
-}
-.footer h2
-{
-  font-size: 1.8rem;
-  font-family: 'Lobster', cursive;
-}
-.opening-timings p
-{
-font-family: 'Staatliches', cursive;
-font-size: 1.2rem;
+  .col-xs-1 {width: 8.33%;}
+  .col-xs-2 {width: 16.66%;}
+  .col-xs-3 {width: 25%;}
+  .col-xs-4 {width: 33.33%;}
+  .col-xs-5 {width: 41.66%;}
+  .col-xs-6 {width: 50%;}
+  .col-xs-7 {width: 58.33%;}
+  .col-xs-8 {width: 66.66%;}
+  .col-xs-9 {width: 75%;}
+  .col-xs-10 {width: 83.33%;}
+  .col-xs-11 {width: 91.66%;}
+  .col-xs-12 {width: 100%;}
+  .content
+  {
+    background-image: url("../Images/about_us1/about_us_xs.jpg");
+    background-size: 100% 100%;
+  }
+  .head-cap{font-size: 6vw;}
+  .starting{font-size: 5vw;}
+  .firstpara-header{font-size: 6vw;}
+  .begin-text{font-size: 5vw;}
+  .miss-heading{font-size: 6vw;}
+  .begin-text{font-size: 5vw;}
+  .footer h2{font-size: 5vw;}
+  .address p{font-size: 4.5vw;}
+  .opening-timings p{font-size: 4.5vw;}
+  .fa-linkedin-square,.fa-instagram,.fa-facebook-official{font-size: 5vw}
+  .link-des
+  {
+    font-size: 3vw;
+    padding-left: 2vw
+  }
+  .salt-n-pepper-copyright{font-size: 9px;}
+  .caption{font-size: 4vw;}
+  .item
+  {
+    display: block;
+    width: 100%;
+  }
+  .mang-img,.ex-mang-img
+  {
+    width: 40%;
+  }
+  .menu-button{display: block;}
+  .name
+  {
+    font-size: 17px;
+    display: inline-block;
+    margin: 2px 0px;
+    padding: 1px 10px;
+    vertical-align: middle;
+  }
+  i{vertical-align: middle;}
+  li
+  {
+    background-color: #373a40;
+    border: 0.5px inset #5a6377;
+  }
+  button
+  {
+    font-size: 6vw;
+    padding: 5px 0px;
+    background-color: #373a40;
+  }
+  li:hover
+  {
+    background-color: #4f5258;
+  }
+  li:hover button{background-color: #4f5258;}
+  .active-bar,.active-bar button,.active-bar:hover,.active-button:hover,.active-bar:hover button
+  {
+    background-color: #edc988;
+    border-radius: 5px;
+  }
+  .display-class{display: none;}
+  .PASlogo
+  {
+    padding: 23px 0px  38px 3px;
+    width: 23%;
+    min-width: 70px;
+  }
+  .restaurant-name{font-size: 8vw;}
 }
 
-.address
-{ position: absolute;
-  display: inline-block;
-  left:2%;
-  color: white;
-}
-.address p
+@media only screen and (min-width: 601px) and (max-width: 768px)
 {
-font-family: 'Staatliches', cursive;
-font-size: 1.2rem;
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .content
+  {
+    background-image: url("../Images/about_us1/about_us_s.jpg");
+    background-size: cover;
+  }
+  li
+  {
+    display: inline-block;
+    margin-top: 28px;
+    margin-right: 0px;
+
+  }
+  button{font-size: 3.5vw;}
+  .name{font-size: 13px;}
+  .nav-bar{float: right;}
+  button:hover{color: #adadad;}
+  .active-button:hover{color: #212121;}
+  .form-content{width: 85%;}
+  .label{width: 29%;}
+  input[type=text],select,input[type=date],input[type=time]{width: 54%;}
 }
-.after-line-footer-content pre
+
+@media only screen and (min-width: 769px) and (max-width: 992px)
 {
-  font-family: 'Montserrat', sans-serif;
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+  .content
+  {
+    background-image: url("../Images/about_us1/about_us_m.jpg");
+    background-size: cover;
+  }
+  li
+  {
+    display: inline-block;
+    margin-top: 37px;
+  }
+  .name {font-size: 15px;}
+  .nav-bar{float: right;}
+  button:hover{color: #adadad;}
+  .active-button:hover{color: #212121;}
+  .form-content{width: 75%;}
+  .label{width: 29%;}{width: 27%;}
+  input[type=text],select,input[type=date],input[type=time]{width: 59%;}
 }
-.opening-timings h2
+@media only screen and (min-width: 993px) and (max-width: 1200px)
 {
-  color:#32e0c4;
-  font-family: 'Oswald', sans-serif;
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
+  .content
+  {
+    background-image: url("../Images/about_us1/about_us_l.jpg");
+    background-size: cover;
+  }
+  li
+  {
+    display: inline-block;
+    margin-top: 41px;
+  }
+  .nav-bar{float: right;}
+  .name {font-size: 15px;}
+  button:hover{color: #adadad;}
+  .active-button:hover{color: #212121;}
+  .form-content{width: 65%;}
+  .label{width: 27%;}
+  input[type=text],select,input[type=date],input[type=time]{width: 60%;}
 }
-.address h2
+
+
+@media only screen and (min-width: 1201px)
 {
-  color:#32e0c4;
-  font-family: 'Oswald', sans-serif;
+  .col-xl-1 {width: 8.33%;}
+  .col-xl-2 {width: 16.66%;}
+  .col-xl-3 {width: 25%;}
+  .col-xl-4 {width: 33.33%;}
+  .col-xl-5 {width: 41.66%;}
+  .col-xl-6 {width: 50%;}
+  .col-xl-7 {width: 58.33%;}
+  .col-xl-8 {width: 66.66%;}
+  .col-xl-9 {width: 75%;}
+  .col-xl-10 {width: 83.33%;}
+  .col-xl-11 {width: 91.66%;}
+  .col-xl-12 {width: 100%;}
+  .content
+  {
+    background-image: url("../Images/about_us1/about_us_xl.jpg");
+    background-size: cover;
+  }
+  li{
+    display: inline-block;
+    margin: 55px 19px 0px 10px;
+  }
+  button
+  {
+    font-size: 3.5vw;
+    padding-right: 7%;
+  }
+  .nav-bar{float: right;}
+  .name {font-size: 1vw;}
+  button:hover{color: #adadad;}
+  .active-button:hover{color: #212121;}
+  .form-content{width: 55%;}
+  .label{width: 23%;}
+  input[type=text],select,input[type=date],input[type=time]{width: 60%;}
+/*  li button.active-button button:hover{color: #212121;}
+*/
 }

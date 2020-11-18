@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Pepper And Salt - A Complete Family Restaurant</title>
   <!-- CSS home Style link -->
+  <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="CSS/bat-styles.css">
   <!-- favicon link -->
   <link rel="icon" href="Favicon/Restaurant.png">
@@ -22,28 +23,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
   <!-- Font - lobster 2 -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-  <!-- Header ahead , (logo and links)-->
-  <div class="header">
-    <img class="PASlogo" src="Logo/Logo.resized.png" alt="Pepper and salt - logo">
-    <div class="nav-bar">
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">Book a Table</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
+  <!-- Header ahead ,(logo and links)-->
+    <div class="header clearfix">
+      <div class="menu-button" onclick="changeFn(this)">
+        <div class="menu-line bar1"></div>
+        <dir class="menu-line bar2 "></dir>
+        <dir class="menu-line bar3"></dir>
+      </div>
+      <img class="PASlogo" src="Logo/peppernsalt.png" alt="Pepper and salt - logo">
+      <p class="restaurant-name">Salt 'n' Pepper</p>
+      <div class="nav-bar clearfix display-class">
+       <ul>
+         <li><button><i class="fa fa-home" aria-hidden="true"></i><p class="name">Home</p></button></li>
+         <li><button><i class="fa fa-check-square" aria-hidden="true"></i><p class="name">Book Table</p></button></li>
+         <li><button ><i class="fa fa-cutlery" aria-hidden="true"></i><p class="name">Menu</p></button></li>
+         <li class="active-bar"><button class="active-button"><i class="fa fa-info-circle" aria-hidden="true"></i><p class="name">About Us</p></button></li>
+         <!-- <li><button><i class="fa fa-phone-square" aria-hidden="true"></i><p class="name">Contact Us</p></button></li> -->
+       </ul>
+      </div>
     </div>
-  </div>
   <!-- form - section -->
 
-  <img class="form-bg" src="Images/bat-bg.jpg" alt="book a table background image">
+  <!-- <img class="form-bg" src="Images/bat-bg.jpg" alt="book a table background image"> -->
   <div class="form">
   <form method="post" action="//submit.form" onSubmit="return validateForm();">
 
@@ -52,19 +59,19 @@
     <div class="comment-title">We would be glad to reserve a table for you at our restaurant!</div>
       <div class="form-content">
         <div class="label">Name :</div>
-          <input type="text" id="data_3" name="data_3" style="width : 400px;" class="form-control" /><br />
+          <input type="text" id="data_3" name="data_3" class="form-control" /><br />
         <div class="label">Phone :</div>
-          <input type="text" id="data_4" name="data_4" style="width : 400px;" class="form-control" /><br />
+          <input type="text" id="data_4" name="data_4" class="form-control" /><br />
 
         <div class="label">Email :</div>
-          <input type="text" id="data_5" name="data_5" style="width : 400px;" class="form-control" /><br />
+          <input type="text" id="data_5" name="data_5" class="form-control" /><br />
 
         <div class="label">Date :</div>
-        <input type="date" id="data_6" name="data_6" style="width : 250px;" class="form-control" /><br />
+        <input type="date" id="data_6" name="data_6" class="form-control" /><br />
         <div class="label">Time :</div>
-        <input type="time" id="data_7" name="data_7" style="width : 250px;" class="form-control" /><br />
-        <div class="label">No. of members :</div>
-        <select id="data_8" name="data_8" style="width:250px;" class="form-control">
+        <input type="time" id="data_7" name="data_7" class="form-control" /><br />
+        <div class="label" id="noOfMember">Members :</div>
+        <select id="data_8" name="data_8" class="form-control">
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -77,28 +84,43 @@
         <option>10</option>
         </select>
         <div class="button"><input name="skip_Submit" value="Submit" type="submit" /></div>
-        </div>
       </div>
+  </div>
+  <!--     footer      -->
+<div class="footer">
+    <div class="address">
+      <h2 style="text-align:center;">Address</h2>
+      <p>DELHI TECHNOLOGICAL UNIVERISITY</p>
+      <p>SHAHBAD DAULATPUR, MAIN BAWANA-ROAD , DELHI</p>
+    </div>
+    <div class="opening-timings">
+      <h2 style="text-align:center;">Opening Hours</h2>
+      <p>MON-FRI : 10AM-12PM</p>
+      <p>SAT-SUN : 8AM-10PM</p>
+    </div>
+    <div class="links">
+      <div class="facebook"><a href="##"><i class="fa fa-facebook-official" aria-hidden="true"></i><span class="link-des">Facebook</span></a></div>
+      <div class="insta"><a href="##"><i class="fa fa-instagram" aria-hidden="true"></i><span class="link-des">Instagram</span></a></div>
+      <div class="linkedln"><a href="##"><i class="fa fa-linkedin-square" aria-hidden="true"></i><span class="link-des">Linkedln</span></a></div>
+    </div>
+    <hr noshade>
+   <div class="after-line-footer-content">
+    <pre>
+    <h3 class="salt-n-pepper-copyright">Salt 'n' Pepper 2020 &copy; All Rights are Reserved</h3>
+    </pre>
+  </div>
+</div>
+<script>
+function changeFn(x) {
+  var y=document.querySelector(".nav-bar");
+  y.classList.toggle("display-class")
+  x.classList.toggle("change");
+  var z=document.querySelectorAll(".menu-line")
+  for(var i=0;i<z.length;i++){
+    z[i].classList.toggle("active");
+  }
+}
+</script>
 
-      <!--     footer      -->
-      <div class="footer">
-        <img style="width:20%;height:20%;float:right;margin:2%;" src="Logo/logo-text.png" alt="salt-n-pepper-logo">
-        <div class="address">
-          <h2 style="text-align:center;">Address</h2>
-          <p>DELHI TECHNOLOGICAL UNIVERISITY</p>
-          <p>SHAHBAD DAULATPUR, MAIN BAWANA-ROAD , DELHI</p>
-        </div>
-        <div class="opening-timings">
-          <h2 style="text-align:center;">Opening Hours</h2>
-          <p>MON-FRI : 10AM-12PM</p>
-          <p>SAT-SUN : 8AM-10PM</p>
-        </div>
-        <hr noshade>
-        <div class="after-line-footer-content">
-          <pre>
-            <h3>Salt 'n' Pepper 2020     <i class="fas fa-copyright"></i>  All Rights are Reserved</h3>
-            </pre>
-        </div>
-      </div>
 </body>
 </html>

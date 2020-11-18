@@ -21,8 +21,8 @@
     <!-- Font - Ostwald -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <!-- Font-Awesome-Icons -->
-    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--     <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+ -->    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
@@ -41,7 +41,7 @@
          <li><button><i class="fa fa-check-square" aria-hidden="true"></i><p class="name">Book Table</p></button></li>
          <li><button ><i class="fa fa-cutlery" aria-hidden="true"></i><p class="name">Menu</p></button></li>
          <li class="active-bar"><button class="active-button"><i class="fa fa-info-circle" aria-hidden="true"></i><p class="name">About Us</p></button></li>
-         <li><button><i class="fa fa-phone-square" aria-hidden="true"></i><p class="name">Contact Us</p></button></li>
+         <!-- <li><button><i class="fa fa-phone-square" aria-hidden="true"></i><p class="name">Contact Us</p></button></li> -->
        </ul>
       </div>
     </div>
@@ -53,62 +53,63 @@
           <h1>Welcome to the Complete and Finest Restaurant</h1>
       </div>
     </div>
-    <hr class="section-break">
-<!-- caraousel - hotdeals + food gallery -->
+<!--     <hr class="section-break">
+ --><!-- caraousel - hotdeals + food gallery -->
 <!-- Slideshow container -->
-<div class="slideshow-container" style="margin-top:5%">
+<div class="slideshow-container">
 <!-- Full-width images with number and caption text -->
-<div class="mySlides1 fade">
- <img src="Images/momos.jpg" style="margin:1% 4%; border-radius:12px; width:30%;height:30%;" alt="momos-img">
+<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+<div class=" silde mySlides1 fade">
+
+ <img src="Images/momos.jpg" style="display: inline-block; vertical-align: middle;" width="30%" height="30%" class="slide-image" alt="momos-img">
  <div class="text-about-deal">
-   <h2 style="font-size:3rem; margin-left: 50px;"><i style="color:#fd8c04;" class="fab fa-hotjar fa-1x"></i> HOT DEALS STARTING AT JUST <i style="color:#fd8c04;" class="fab fa-hotjar fa-1x"></i></h2>
-   <h4 style="font-size:3em; margin:10px;">&#x20B9; 99 <sup>*</sup></h4>
+   <h2 class="slide-text">HOT MEALS STARTING AT JUST <br> &#8377;199</h2>
+   <!-- <h4 style="font-size:3em; margin:10px;">&#x20B9; 99 <sup>*</sup></h4> -->
  </div>
+
 </div>
 
-<div class="mySlides1 fade">
- <img src="Images/hand-sanitize.jpg" style="margin:1% 4%; border-radius:12px; width:25%;height:25%;" alt="bowl-img">
+<div class="silde mySlides1 fade">
+ <img src="Images/hand-sanitize.jpg" class="slide-image" alt="bowl-img">
  <div class="text-about-deal">
-   <h2 style="font-size:3rem; margin-left: 5%">DUE TO COVID-19</h2>
+   <h2 class="slide-text">DUE TO COVID-19</h2>
    <p class="covid-text">We have taken appropriate measures by sanitising our hands as well as by regular temperature checks.</p>
-   <p>Please Maintain Social Distancing while in the Restaurant.</p>
+   <p class="covid-text">Please Maintain Social Distancing while in the Restaurant.</p>
  </div>
 </div>
 
 <!-- Next and previous buttons -->
-<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
 <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 </div>
 <br>
-<hr class="section-break">
-<!-- banner section -->
+<!-- <hr class="section-break">
+ --><!-- banner section -->
     <div class="gallery-img">
-      <h2><i style="color:#f5b461;" class="fas fa-pizza-slice"></i>  Food Gallery <i style="color:#f5b461;" class="fas fa-pizza-slice"></i></h2>
       <img class="banner" src="Images/banner.jpg" alt="banner-food-gallery">
+      <h2><i style="color:#f5b461;" class="fas fa-pizza-slice"></i>  Food Gallery <i style="color:#f5b461;" class="fas fa-pizza-slice"></i></h2>
     </div>
 
 
 
 <div class="slideshow-container">
-<div class="mySlides2 fade">
- <img src="Images/2.jpg" style="vertical-align: middle; border-radius:12px; width:25%;margin:1% 4%; ">
- <img src="Images/1.jpg" style="vertical-align: middle; border-radius:12px; width:25%;margin:1% 4%;">
- <img src="Images/3.jpg" style="vertical-align: middle; border-radius:12px; width:25%;margin:1% 3% ;">
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+<div class="silde mySlides2 fade">
+ <img src="Images/2.jpg" class="imageForSLider">
+ <img src="Images/1.jpg" class="imageForSLider">
+ <img src="Images/3.jpg" class="imageForSLider">
 </div>
 
-<div class="mySlides2 fade">
- <img src="Images/4.jpg" style="border-radius:12px; width:25%; height:10%;margin:1% 4%; ">
- <img src="Images/5.jpg" style="border-radius:12px; width:25%; height:10%;margin:1% 4%;">
- <img src="Images/6.jpg" style="border-radius:12px; width:25%; height:10%;margin:1% 4%;">
+<div class="silde mySlides2 fade">
+ <img src="Images/4.jpg" class="imageForSLider">
+ <img src="Images/5.jpg" class="imageForSLider">
+ <img src="Images/6.jpg" class="imageForSLider">
 </div>
 
-<div class="mySlides2 fade">
- <img src="Images/7.jpg" style="border-radius:12px; width:25%; height:10%;margin:1% 4%; ">
- <img src="Images/8.jpg" style="border-radius:12px; width:25%; height:10%;margin:1% 4%;">
- <img src="Images/9.jpg" style="border-radius:12px; width:25%; height:10%;margin:1% 4%;">
+<div class="silde mySlides2 fade">
+ <img src="Images/7.jpg"  class="imageForSLider">
+ <img src="Images/8.jpg"  class="imageForSLider">
+ <img src="Images/9.jpg"  class="imageForSLider">
 </div>
-
-<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 </div>
 <!-- Javascript -->
@@ -131,25 +132,25 @@ if (n < 1) {slideIndex[no] = x.length}
 for (i = 0; i < x.length; i++) {
   x[i].style.display = "none";
 }
-x[slideIndex[no]-1].style.display = "block";
+x[slideIndex[no]-1].style.display = "inline-block";
 }
 </script>
-<hr class="section-break">
-<!-- How to reach us -->
+<!-- <hr class="section-break">
+ --><!-- How to reach us -->
 <div class="map-reach-section">
+  <div class="reach-us">
+ <h2>How to reach us !</h2>
+ <p>PHONE NO : +91 7428148XXX</p>
+ <p> FAX NO : +91 8382467342</p>
+ <p>ADDRESS : Delhi Technological University, Shahbad Dairy</p>
+</div>
 <div class="map">
  <!-- embedded map -->
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55967.974126758425!2d77.10237054078925!3d28.74946523903954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01212a67c965%3A0x87d470ca1c30d1b0!2sDelhi%20Technological%20University!5e0!3m2!1sen!2sin!4v1604652630633!5m2!1sen!2sin"  width="500" height="350" frameborder="0" style="margin:4%" ></iframe>
-</div>
-<div class="reach-us">
- <h2>How to reach us !</h2>
- <p><i style="color:#706c61;" class="fas fa-mobile-alt"></i> PHONE NO : +91 7428148XXX</p>
- <p><i style="color:#706c61;" class="fas fa-fax"></i> FAX NO : +91 8382467342</p>
- <p><i style="color:#706c61;" class="fas fa-map-marked-alt"></i> ADDRESS : Delhi Technological University, Shahbad Dairy</p>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55967.974126758425!2d77.10237054078925!3d28.74946523903954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01212a67c965%3A0x87d470ca1c30d1b0!2sDelhi%20Technological%20University!5e0!3m2!1sen!2sin!4v1604652630633!5m2!1sen!2sin" frameborder="0"></iframe>
 </div>
 </div>
-<hr class="section-break">
-<!-- footer -->
+<!-- <hr class="section-break">
+ --><!-- footer -->
 <div class="footer">
     <div class="address">
       <h2 style="text-align:center;">Address</h2>

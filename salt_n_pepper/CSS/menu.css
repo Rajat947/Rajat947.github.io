@@ -3,6 +3,7 @@
 
 body,html
 {
+  width: 100%;
   margin: 0px;
   padding: 0px;
   height: 100vh;
@@ -224,13 +225,23 @@ a
     vertical-align: baseline;
 }
 #menu_content {
-    width: 900px;
-    padding-bottom: 30px;
-    margin-top: 20px;
-    margin-left: 30px;
+    width: 90%;
+    padding: 10px;
     border-radius: 5px;
     background: #f5b461;
+    display: block;
+    margin: 10px auto 50px auto;
 }
+.menu-row
+{
+  width: 30%;
+  display: inline-block;
+  margin-right:20px;
+  vertical-align: top;
+  text-align: left;
+}
+
+
 .heading
 {
   font-size: 3rem;
@@ -306,11 +317,6 @@ td
   .col-xs-10 {width: 83.33%;}
   .col-xs-11 {width: 91.66%;}
   .col-xs-12 {width: 100%;}
-  .content
-  {
-    background-image: url("../Images/about_us1/about_us_xs.jpg");
-    background-size: 100% 100%;
-  }
   .head-cap{font-size: 6vw;}
   .starting{font-size: 5vw;}
   .firstpara-header{font-size: 6vw;}
@@ -376,6 +382,8 @@ td
     min-width: 70px;
   }
   .restaurant-name{font-size: 8vw;}
+  #menu-content{width: 70%;}
+  .menu-row{width: 80%;}
   /*h3 pre{font-size: 3vw;}*/
 }
 
@@ -393,11 +401,6 @@ td
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
-  .content
-  {
-    background-image: url("../Images/about_us1/about_us_s.jpg");
-    background-size: cover;
-  }
   li
   {
     display: inline-block;
@@ -410,6 +413,7 @@ td
   .nav-bar{float: right;}
   button:hover{color: #adadad;}
   .active-button:hover{color: #212121;}
+  .menu-row{width: 28%;}
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px)
@@ -426,11 +430,6 @@ td
   .col-m-10 {width: 83.33%;}
   .col-m-11 {width: 91.66%;}
   .col-m-12 {width: 100%;}
-  .content
-  {
-    background-image: url("../Images/about_us1/about_us_m.jpg");
-    background-size: cover;
-  }
   li
   {
     display: inline-block;
@@ -440,6 +439,7 @@ td
   .nav-bar{float: right;}
   button:hover{color: #adadad;}
   .active-button:hover{color: #212121;}
+  .menu-row{width: 29%;}
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px)
 {
@@ -455,11 +455,6 @@ td
   .col-l-10 {width: 83.33%;}
   .col-l-11 {width: 91.66%;}
   .col-l-12 {width: 100%;}
-  .content
-  {
-    background-image: url("../Images/about_us1/about_us_l.jpg");
-    background-size: cover;
-  }
   li
   {
     display: inline-block;
@@ -486,11 +481,6 @@ td
   .col-xl-10 {width: 83.33%;}
   .col-xl-11 {width: 91.66%;}
   .col-xl-12 {width: 100%;}
-  .content
-  {
-    background-image: url("../Images/about_us1/about_us_xl.jpg");
-    background-size: cover;
-  }
   li{
     display: inline-block;
     margin: 55px 19px 0px 10px;
