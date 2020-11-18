@@ -152,6 +152,7 @@ ul
 .covid-text
 {
   margin: 0px;
+  font-size: 2.2vw;
   padding: 5px 0px 0px 0px ;
 }
 
@@ -555,7 +556,10 @@ a
   }
   .restaurant-name{font-size: 8vw;}
   .prev, .next{font-size: 5vw;}
-  .silde{width: 87%;}
+  .silde
+  {
+    width: 87%;
+  }
   .map
   {
     width: 100%;
@@ -573,14 +577,44 @@ a
     margin: 10px auto;
     font-size: 5vw;
   }
-  .title-image{height: 42vw}
-  .slideshow-container{height: 42vw;}
+  .title-image{height: 50vw}
+  .slide-image{
+    margin: 1% 4% 1% 0;
+    width: 51%;
+  }
+  .text-about-deal
+  {
+    width: 43%;
+  }
+  .adjust2
+  {
+    padding: 20px 1px;
+  }
+  .adjust2-arrow
+  {
+    font-size: 4vw;
+  }
+  /*.slideshow-container{height: 42vw;}
   .prev, .next
   {
     vertical-align: text-bottom;
     margin-top: 14vw;
+  }*/
+  .adjust
+  {
+    padding: 7vw 0px;
+    margin: 20px 0px;
   }
   .slide-text{font-size: 6vw;}
+  .adjust-h2{font-size: 8vw;}
+  .gallery-img{height: 53vw;}
+  .adjust2-slide{padding: 5vw 0px;}
+  .adjust2-image
+  {
+    width: 32%;
+    margin: 10px 0px;
+  }
+  .covid-text{font-size: 1em;}
   /*h3 pre{font-size: 3vw;}*/
 }
 
