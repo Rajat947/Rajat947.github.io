@@ -573,6 +573,14 @@ a
     margin: 10px auto;
     font-size: 5vw;
   }
+  .title-image{height: 42vw}
+  .slideshow-container{height: 42vw;}
+  .prev, .next
+  {
+    vertical-align: text-bottom;
+    margin-top: 14vw;
+  }
+  .slide-text{font-size: 6vw;}
   /*h3 pre{font-size: 3vw;}*/
 }
 

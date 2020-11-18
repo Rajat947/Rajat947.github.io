@@ -112,29 +112,7 @@
 </div>
 <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 </div>
-<!-- Javascript -->
 
-<script>
-var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
-
-function plusSlides(n, no) {
-showSlides(slideIndex[no] += n, no);
-}
-
-function showSlides(n, no) {
-var i;
-var x = document.getElementsByClassName(slideId[no]);
-if (n > x.length) {slideIndex[no] = 1}
-if (n < 1) {slideIndex[no] = x.length}
-for (i = 0; i < x.length; i++) {
-  x[i].style.display = "none";
-}
-x[slideIndex[no]-1].style.display = "inline-block";
-}
-</script>
 <!-- <hr class="section-break">
  --><!-- How to reach us -->
 <div class="map-reach-section">
@@ -174,5 +152,39 @@ x[slideIndex[no]-1].style.display = "inline-block";
     </pre>
   </div>
 </div>
+
+<!-- Javascript -->
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+var i;
+var x = document.getElementsByClassName(slideId[no]);
+if (n > x.length) {slideIndex[no] = 1}
+if (n < 1) {slideIndex[no] = x.length}
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";
+}
+x[slideIndex[no]-1].style.display = "inline-block";
+}
+function changeFn(x) {
+  var y=document.querySelector(".nav-bar");
+  y.classList.toggle("display-class")
+  x.classList.toggle("change");
+  var z=document.querySelectorAll(".menu-line")
+  for(var i=0;i<z.length;i++){
+    z[i].classList.toggle("active");
+  }
+}
+</script>
+
 </body>
 </html>
