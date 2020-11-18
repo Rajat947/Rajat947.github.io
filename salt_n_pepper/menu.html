@@ -45,26 +45,29 @@
       <p class="restaurant-name">Salt 'n' Pepper</p>
       <div class="nav-bar clearfix display-class">
        <ul>
-         <li><button><i class="fa fa-home" aria-hidden="true"></i><p class="name">Home</p></button></li>
-         <li><button><i class="fa fa-check-square" aria-hidden="true"></i><p class="name">Book Table</p></button></li>
-         <li><button ><i class="fa fa-cutlery" aria-hidden="true"></i><p class="name">Menu</p></button></li>
-         <li class="active-bar"><button class="active-button"><i class="fa fa-info-circle" aria-hidden="true"></i><p class="name">About Us</p></button></li>
-         <li><button><i class="fa fa-phone-square" aria-hidden="true"></i><p class="name">Contact Us</p></button></li>
+         <li class=""><button class="homeBtn" onclick="location.href='home.html' "><i class="fa fa-home" aria-hidden="true"></i><p class="name">Home</p></button></li>
+
+         <li class=""><button class="bookTableBtn" onclick="location.href='Book_a_table.html'"><i class="fa fa-check-square" aria-hidden="true"></i><p class="name">Book Table</p></button></li>
+
+         <li class="active-bar"><button class="menuBtn  active-button" onclick="location.href='menu.html' "><i class="fa fa-cutlery" aria-hidden="true"></i><p class="name">Menu</p></button></li>
+
+         <li class=""><button class="aboutUsBtn" onclick="location.href='about.html' "><i class="fa fa-info-circle" aria-hidden="true"></i><p class="name">About Us</p></button></li>
        </ul>
       </div>
     </div>
   <!-- Menu - Section -->
-    <h2 class="heading">Our Menu</h2>
+    <div class="container">
+      <h2 class="heading">Our Menu</h2>
       <h3 class="caption-head">Delicious dishes for a perfect dine!</h3>
       <p class="headline-menu">Delicious dishes for a perfect dine! Salt n Pepper Restaurant offers delicious and mouth-watering food and beverages in its vegetarian food menu. The menu includes all types of dishes through its different categories
         including breakfast combo, special snacks, north side se, south side se and chinese too. You can have or take away the food listed in Indian food menu at our Restaurant.</p>
-      <div id="menu_content" style="top: 517px; display: block; margin: 10px auto 50px auto; padding:20px 0 0 0 ;position: static;">
-              <div style="width:850px;margin: 0 auto">
-                <div style="width:270px; margin-right:20px; float:left;">
+      <div id="menu_content">
+              <div style="text-align: center;">
+                <div class="menu-row" >
                   <table cellspacing="6" cellpadding="0" border="0" width="93%">
                     <tbody>
                       <tr>
-                        <td width="79%" class="bor"><img height="180" width="180" alt="Speciality Snacks Menu" src="Images/img1.gif"></td>
+                        <td width="79%" class="bor"><img class="menu-category" width="100%" alt="Speciality Snacks Menu" src="Images/img1.gif"></td>
                       </tr>
                       <tr>
                         <td valign="top" class="main-heading-menu">All Time Favourite </td>
@@ -244,7 +247,7 @@
                         <td valign="top">&nbsp;</td>
                       </tr>
                       <tr>
-                        <td valign="top" class="bor"><img height="180" width="180" alt="Chinese Menu" src="Images/img4.gif"></td>
+                        <td valign="top" class="bor"><img class="menu-category" width="100%" alt="Chinese Menu" src="Images/img4.gif"></td>
                       </tr>
                       <tr>
                         <td valign="top" class="main-heading-menu">Soups</td>
@@ -392,7 +395,7 @@
                     </tbody>
                     <tbody>
                       <tr>
-                        <td width="79%" class="bor"><img height="180" width="180" alt="Chandni Chowk style Menu" src="Images/img2.gif"></td>
+                        <td width="79%" class="bor"><img class="menu-category" width="100%" alt="Chandni Chowk style Menu" src="Images/img2.gif"></td>
                       </tr>
                       <tr>
                         <td valign="top">Pav Bhaji</td>
@@ -433,294 +436,11 @@
                     </tbody>
                   </table>
                 </div>
-                <div style="width:270px; margin-right:20px; float:left;">
-                  <table cellspacing="6" cellpadding="0" border="0" width="93%">
-                    <tbody>
-                      <tr>
-                        <td width="79%" class="bor"><img height="180" width="180" alt="North Indian Menu" src="Images/img3.gif"></td>
-                      </tr>
-
-                      <tr>
-                        <td width="79%" valign="top" class="main-heading-menu">Soups</td>
-                        <td width="21%" valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Tomato Soup </td>
-                        <td valign="top">89/-</td>
-                      </tr>
-
-                      <tr>
-                        <td valign="top" class="main-heading-menu">&nbsp;</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top" class="main-heading-menu">Starters</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Tandoori Paneer Tikka</td>
-                        <td valign="top">220/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Malai Paneer Tikka</td>
-                        <td valign="top">220/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Soya Tandoori Tikka <img src="Images/chilli.png"></td>
-                        <td valign="top">175/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Tandoori Aloo </td>
-                        <td valign="top"> 179/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Punjabi Soya Chap</td>
-                        <td valign="top">179/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Hare-Bhare Kabab </td>
-                        <td valign="top">162/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Dahi ke Kabab</td>
-                        <td valign="top"> 179/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Platter</td>
-                        <td valign="top">325/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">&nbsp;</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top" class="main-heading-menu">Subziyan</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Shahi Paneer</td>
-                        <td valign="top">210/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Kadhai Paneer <img src="Images/chilli.png"></td>
-                        <td valign="top">210/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Paneer Butter Masala <img src="Images/chilli.png"></td>
-                        <td valign="top">210/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Mushroom Masala <img src="Images/chilli.png"></td>
-                        <td valign="top">215/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Malai Kofta</td>
-                        <td valign="top"> 210/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">&nbsp;</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top" class="main-heading-menu">Dals</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Dal Makhani </td>
-                        <td valign="top">192/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Yellow Dal </td>
-                        <td valign="top">141/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Rajma <img src="Images/chilli.png"></td>
-                        <td valign="top">141/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Chole <img src="Images/chilli.png"></td>
-                        <td valign="top"> 141/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">&nbsp;</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top" class="main-heading-menu">Breads</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Tandoori Roti </td>
-                        <td valign="top">30/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Roomali Roti </td>
-                        <td valign="top">17/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Butter Roti </td>
-                        <td valign="top">36/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Plain Naan </td>
-                        <td valign="top">43/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Butter Naan </td>
-                        <td valign="top">58/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Garlic Naan Butter</td>
-                        <td valign="top">60/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Tawa Parantha </td>
-                        <td valign="top">53/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Laccha Parantha </td>
-                        <td valign="top">53/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Pudina Parantha </td>
-                        <td valign="top">53/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Stuffed Kulcha (Aloo) </td>
-                        <td valign="top">65/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Stuffed Kulcha (Paneer) </td>
-                        <td valign="top">65/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Stuffed Kulcha (Onion) </td>
-                        <td valign="top">65/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Papad</td>
-                        <td valign="top">15/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">&nbsp;</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td colspan="2" valign="top" class="main-heading-menu">Rice / Pulao / Biryanis / Raitas</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Steam Rice </td>
-                        <td valign="top">161/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Soya Dum Biryani <img src="Images/chilli.png"></td>
-                        <td valign="top">220/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Veg. Pulao </td>
-                        <td valign="top">161/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Mix Veg. Pulao </td>
-                        <td valign="top">161/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Jeera Pulao </td>
-                        <td valign="top">161/-</td>
-                      </tr>
-
-                      <tr>
-                        <td valign="top">Matka Biryani With Raita <img src="Images/chilli.png"></td>
-                        <td valign="top">220/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Hyderabadi Biryani <img src="Images/chilli.png"></td>
-                        <td valign="top">220/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Plain Raita</td>
-                        <td valign="top">102/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Boondi Raita</td>
-                        <td valign="top">102/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Mix. Veg. Raita</td>
-                        <td valign="top">102/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Jeera Raita</td>
-                        <td valign="top">102/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Pineapple Raita</td>
-                        <td valign="top">102/-</td>
-                      </tr>
-
-                      <tr>
-                        <td valign="top">&nbsp;</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top" class="main-heading-menu">Dessert</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Gulab Jamun</td>
-                        <td valign="top"> 60/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Halwa (Seasonal)</td>
-                        <td valign="top"> 60/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">&nbsp;</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td colspan="2" valign="top" class="main-heading-menu">Meal For One (North Indian) </td>
-                      </tr>
-                      <tr>
-                        <td valign="top"><strong>Thali Regular (Only Packing) </strong></td>
-                        <td valign="top"><strong>196/-</strong></td>
-                      </tr>
-                      <tr>
-                        <td valign="top">(Dal Makhani, Seasonal Veg., Bread, Rice &amp; One Dessert.)</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top"><strong>Thali Special</strong></td>
-                        <td valign="top"><strong>280/-</strong></td>
-                      </tr>
-                      <tr>
-                        <td valign="top">(Dal Makhani, Seasonal Veg., Shahi Paneer, Bread, Rice, Raita, Papad &amp; One Dessert.)</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">&nbsp;</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Roomali Roti with Paneer Tikka Masala </td>
-                        <td valign="top">250/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">Rogan Soya Chap with Roomali Roti</td>
-                        <td valign="top">250/-</td>
-                      </tr>
-                      <tr>
-                        <td valign="top">&nbsp;</td>
-                        <td valign="top">&nbsp;</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div style="width:270px; float:right;">
+                <div class="menu-row">
                   <table cellspacing="4" cellpadding="0" border="0" width="100%">
                     <tbody>
                       <tr>
-                        <td valign="top" class="bor"><img height="180" width="180" alt="South Indian Menu" src="Images/img5.gif"></td>
+                        <td valign="top" class="bor"><img class="menu-category" width="100%" alt="South Indian Menu" src="Images/img5.gif"></td>
                       </tr>
                       <tr>
                         <td valign="top" class="main-heading-menu">South-Indian</td>
@@ -870,7 +590,7 @@
                         <td valign="top">15/-</td>
                       </tr>
                       <tr>
-                        <td width="64%" valign="top" class="bor"><img height="180" width="180" alt="S.L.U.R.P." src="Images/img6.gif"></td>
+                        <td width="64%" valign="top" class="bor"><img class="menu-category"width="100%" alt="S.L.U.R.P." src="Images/img6.gif"></td>
                       </tr>
                       <tr>
                         <td valign="top" class="main-heading-menu">Fresh Juices </td>
@@ -1164,11 +884,295 @@
                     </tbody>
                   </table>
                 </div>
+                <div class="menu-row">
+                  <table cellspacing="6" cellpadding="0" border="0" width="93%">
+                    <tbody>
+                      <tr>
+                        <td width="79%" class="bor"><img class="menu-category" width="100%" alt="North Indian Menu" src="Images/img3.gif"></td>
+                      </tr>
+
+                      <tr>
+                        <td width="79%" valign="top" class="main-heading-menu">Soups</td>
+                        <td width="21%" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Tomato Soup </td>
+                        <td valign="top">89/-</td>
+                      </tr>
+
+                      <tr>
+                        <td valign="top" class="main-heading-menu">&nbsp;</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="main-heading-menu">Starters</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Tandoori Paneer Tikka</td>
+                        <td valign="top">220/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Malai Paneer Tikka</td>
+                        <td valign="top">220/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Soya Tandoori Tikka <img src="Images/chilli.png"></td>
+                        <td valign="top">175/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Tandoori Aloo </td>
+                        <td valign="top"> 179/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Punjabi Soya Chap</td>
+                        <td valign="top">179/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Hare-Bhare Kabab </td>
+                        <td valign="top">162/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Dahi ke Kabab</td>
+                        <td valign="top"> 179/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Platter</td>
+                        <td valign="top">325/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">&nbsp;</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="main-heading-menu">Subziyan</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Shahi Paneer</td>
+                        <td valign="top">210/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Kadhai Paneer <img src="Images/chilli.png"></td>
+                        <td valign="top">210/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Paneer Butter Masala <img src="Images/chilli.png"></td>
+                        <td valign="top">210/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Mushroom Masala <img src="Images/chilli.png"></td>
+                        <td valign="top">215/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Malai Kofta</td>
+                        <td valign="top"> 210/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">&nbsp;</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="main-heading-menu">Dals</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Dal Makhani </td>
+                        <td valign="top">192/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Yellow Dal </td>
+                        <td valign="top">141/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Rajma <img src="Images/chilli.png"></td>
+                        <td valign="top">141/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Chole <img src="Images/chilli.png"></td>
+                        <td valign="top"> 141/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">&nbsp;</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="main-heading-menu">Breads</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Tandoori Roti </td>
+                        <td valign="top">30/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Roomali Roti </td>
+                        <td valign="top">17/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Butter Roti </td>
+                        <td valign="top">36/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Plain Naan </td>
+                        <td valign="top">43/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Butter Naan </td>
+                        <td valign="top">58/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Garlic Naan Butter</td>
+                        <td valign="top">60/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Tawa Parantha </td>
+                        <td valign="top">53/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Laccha Parantha </td>
+                        <td valign="top">53/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Pudina Parantha </td>
+                        <td valign="top">53/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Stuffed Kulcha (Aloo) </td>
+                        <td valign="top">65/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Stuffed Kulcha (Paneer) </td>
+                        <td valign="top">65/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Stuffed Kulcha (Onion) </td>
+                        <td valign="top">65/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Papad</td>
+                        <td valign="top">15/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">&nbsp;</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" valign="top" class="main-heading-menu">Rice / Pulao / Biryanis / Raitas</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Steam Rice </td>
+                        <td valign="top">161/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Soya Dum Biryani <img src="Images/chilli.png"></td>
+                        <td valign="top">220/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Veg. Pulao </td>
+                        <td valign="top">161/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Mix Veg. Pulao </td>
+                        <td valign="top">161/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Jeera Pulao </td>
+                        <td valign="top">161/-</td>
+                      </tr>
+
+                      <tr>
+                        <td valign="top">Matka Biryani With Raita <img src="Images/chilli.png"></td>
+                        <td valign="top">220/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Hyderabadi Biryani <img src="Images/chilli.png"></td>
+                        <td valign="top">220/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Plain Raita</td>
+                        <td valign="top">102/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Boondi Raita</td>
+                        <td valign="top">102/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Mix. Veg. Raita</td>
+                        <td valign="top">102/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Jeera Raita</td>
+                        <td valign="top">102/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Pineapple Raita</td>
+                        <td valign="top">102/-</td>
+                      </tr>
+
+                      <tr>
+                        <td valign="top">&nbsp;</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="main-heading-menu">Dessert</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Gulab Jamun</td>
+                        <td valign="top"> 60/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Halwa (Seasonal)</td>
+                        <td valign="top"> 60/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">&nbsp;</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" valign="top" class="main-heading-menu">Meal For One (North Indian) </td>
+                      </tr>
+                      <tr>
+                        <td valign="top"><strong>Thali Regular (Only Packing) </strong></td>
+                        <td valign="top"><strong>196/-</strong></td>
+                      </tr>
+                      <tr>
+                        <td valign="top">(Dal Makhani, Seasonal Veg., Bread, Rice &amp; One Dessert.)</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top"><strong>Thali Special</strong></td>
+                        <td valign="top"><strong>280/-</strong></td>
+                      </tr>
+                      <tr>
+                        <td valign="top">(Dal Makhani, Seasonal Veg., Shahi Paneer, Bread, Rice, Raita, Papad &amp; One Dessert.)</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">&nbsp;</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Roomali Roti with Paneer Tikka Masala </td>
+                        <td valign="top">250/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">Rogan Soya Chap with Roomali Roti</td>
+                        <td valign="top">250/-</td>
+                      </tr>
+                      <tr>
+                        <td valign="top">&nbsp;</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
                 <div class="clear"></div>
               </div>
           <br class="clear">
           <br class="clear">
           <br class="clear">
+    </div>
     </div>
 
   <!--     footer      -->
@@ -1196,16 +1200,6 @@
   </div>
 </div>
 </div>
-<script>
-function changeFn(x) {
-  var y=document.querySelector(".nav-bar");
-  y.classList.toggle("display-class")
-  x.classList.toggle("change");
-  var z=document.querySelectorAll(".menu-line")
-  for(var i=0;i<z.length;i++){
-    z[i].classList.toggle("active");
-  }
-}
-</script>
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>

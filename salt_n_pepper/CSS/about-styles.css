@@ -252,7 +252,6 @@ a
   color: #d37815;
   font-family: 'lobster' ,cursive;
   margin-top: 0;
-  padding-top: 2%;
 }
 .head-cap
 {
@@ -361,6 +360,7 @@ color: #dd9866;
   {
     font-size: 6vw;
     padding: 5px 0px;
+    width: 100%;
     background-color: #373a40;
   }
   li:hover

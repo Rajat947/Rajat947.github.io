@@ -112,16 +112,18 @@ ul
 .title-box
 {
   position: relative;
+  /*background-image: url("Images/cheese-ballsresized.jpg");
+  background-size: 100%;*/
 }
 .title
 {
     font-family: 'Lobster', cursive;
-    font-size: 2rem;
+    font-size: 3vw;
     text-align: center;
     position:absolute;
-    top:10%;
-    left:0;
-    right:0;
+    top: 0px;
+    /*left:0;
+    right:0;*/
     color:#d37815;
 }
 
@@ -136,29 +138,73 @@ ul
 .text-about-deal
 {
   font-family: 'Staatliches', cursive;
-  position: absolute;
+  /*position: absolute;*/
   color:#ffda77;
-  right:10%;
-  top:1%;
-  font-size: 1.2rem;
-  padding:5px 10px;
-  Width:60%;
+  /*right:10%;*/
+  /*top:1%;*/
+  /*font-size: 1.2rem;*/
+  width: 60%;
+  vertical-align: middle;
+  /*padding:5px 10px;*/
+  display: inline-block;
   text-align: center;
 }
 .covid-text
 {
-  margin-left:4%
+  margin: 0px;
+  font-size: 2.2vw;
+  padding: 5px 0px 0px 0px ;
 }
-* {box-sizing: border-box}
+
+.silde
+{
+  /*display: inline-block;*/
+  width: 93%;
+}
+
+
+.slide-image
+{
+  display: inline-block;
+  margin:1% 4%;
+  vertical-align: middle;
+  border-radius:12px;
+  width:30%;
+}
+
+.slide-text
+{
+  display: inline-block;
+  font-size:4vw;
+  vertical-align: middle;
+  margin: 0px;
+  padding: 0px;
+  /*margin-left: 5%;*/
+}
+
+.imageForSLider
+{
+  vertical-align: middle; 
+  border-radius:12px;
+  width:28%;
+  margin: 10px 10px 10px 0px;
+}  
+
+
+
+
 .mySlides1, .mySlides2 {display: none;}
 /* img {vertical-align: middle;} */
 
 /* Slideshow container */
-.slideshow-container {
-
-  position: relative;
+.slideshow-container 
+{
+  /*position: relative;*/
   background-color: #222222;
-  margin: 4% 7% 0% 7%;
+  width: 95%;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
   border-radius: 7px;
 
 }
@@ -166,14 +212,16 @@ ul
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
+  /*position: absolute;
   top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
+  width: auto;*/
+  /*padding: 16px;*/
+  /*margin-top: -22px;*/
   color: #9ddfd3;
+  display: inline-block;
   font-weight: bold;
-  font-size: 18px;
+  vertical-align: middle;
+  font-size: 2.5vw;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -237,20 +285,28 @@ ul
   to {opacity: 1}
 }
 /* reach us section */
-.map iframe
+iframe
 {
   border-radius: 5px;
-  float: left;
+  /*float: left;*/
   overflow: hidden;
+  width: 100%;
+  height: 30vw;
 
 }
 
 .map-reach-section
 {
-  position:relative;
+  /*position:relative;*/
   padding: 20px;
-  height:80%;
+  /*height:80%;*/
 
+}
+.map
+{
+  width: 50%;
+  vertical-align: middle;
+  display: inline-block;
 }
 .reach-us h2
 {
@@ -259,11 +315,13 @@ ul
 }
 .reach-us
 {
-  text-align: justify;
+  text-align: center;
   display: inline-block;
-  margin: 6% 4% 7% 8%;
+  /*margin: 6% 4% 7% 8%;*/
   font-family: 'Staatliches', cursive;
-  font-size: 1.3rem;
+  /*font-size: 1.3rem;*/
+  vertical-align: middle;
+  width: 40%;
   color: #d37815;
 }
 .reach-us p
@@ -272,21 +330,30 @@ ul
 }
 .banner
 {
-  position: relative;
+  /*position: relative;*/
   width: 100%;
-  height: 15rem;
+  height: 45vw;
   padding: 0;
   margin: 0;
 
 }
+.gallery-img
+{
+  width: 95%;
+  position: relative;
+  margin: 0px auto;
+}
 .gallery-img h2
 {
-  position: relative;
-  top: 180px;
+  position: absolute;
+  top: 30%;
+  left: 24%;
   z-index: 1;
   font-family: 'lobster', cursive;
   text-align: center;
-  font-size: 2.7rem;
+  margin: 0px;
+  padding: 0px;
+  font-size: 10vw;
   color: #d37815;
 }
 iframe
@@ -468,6 +535,7 @@ a
   {
     font-size: 6vw;
     padding: 5px 0px;
+    width: 100%;
     background-color: #373a40;
   }
   li:hover
@@ -488,6 +556,66 @@ a
     min-width: 70px;
   }
   .restaurant-name{font-size: 8vw;}
+  .prev, .next{font-size: 5vw;}
+  .silde
+  {
+    width: 87%;
+  }
+  .map
+  {
+    width: 100%;
+    display: block;
+  }
+  iframe
+  {
+    width: 100%;
+    height: 70vw;
+  }
+  .reach-us
+  {
+    width: 70%;
+    display: block;
+    margin: 10px auto;
+    font-size: 5vw;
+  }
+  .title-image{height: 50vw}
+  .slide-image{
+    margin: 1% 4% 1% 0;
+    width: 51%;
+  }
+  .text-about-deal
+  {
+    width: 43%;
+  }
+  .adjust2
+  {
+    padding: 20px 1px;
+  }
+  .adjust2-arrow
+  {
+    font-size: 4vw;
+  }
+  /*.slideshow-container{height: 42vw;}
+  .prev, .next
+  {
+    vertical-align: text-bottom;
+    margin-top: 14vw;
+  }*/
+  .adjust
+  {
+    padding: 7vw 0px;
+    margin: 20px 0px;
+  }
+  .slide-text{font-size: 6vw;}
+  .adjust-h2{font-size: 8vw;}
+  .gallery-img{height: 53vw;}
+  .adjust2-slide{padding: 5vw 0px;}
+  .adjust2-image
+  {
+    width: 32%;
+    margin: 10px 0px;
+  }
+  .covid-text{font-size: 1em;}
   /*h3 pre{font-size: 3vw;}*/
 }
 
@@ -522,6 +650,22 @@ a
   .nav-bar{float: right;}
   button:hover{color: #adadad;}
   .active-button:hover{color: #212121;}
+  .banner{height: 35vw;}
+  .gallery-img h2
+  {
+    font-size: 7vw;
+    left: 30%;
+  }
+  iframe
+  {
+    width: 100%;
+    height: 28vw;
+  }
+  .reach-us
+  {
+    width: 48%;
+    font-size: 2.7vw;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px)
@@ -552,6 +696,27 @@ a
   .nav-bar{float: right;}
   button:hover{color: #adadad;}
   .active-button:hover{color: #212121;}
+  .banner{height: 35vw;}
+  .gallery-img h2
+  {
+    font-size: 7vw;
+    left: 30%;
+  }
+  .title{font-size: 2.8vw;}
+  .map
+  {
+    width: 54%;
+  }
+  iframe
+  {
+    width: 100%;
+    height: 28vw;
+  }
+  .reach-us
+  {
+    width: 45%;
+    font-size: 2.7vw;
+  }
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px)
 {
@@ -581,6 +746,21 @@ a
   .name {font-size: 15px;}
   button:hover{color: #adadad;}
   .active-button:hover{color: #212121;}
+  .banner{height: 25vw;}
+  .gallery-img h2
+  {
+    font-size: 5vw;
+    left: 35%;
+    top: 35%;
+  }
+  .title{font-size: 2.8vw;}
+  .reach-us
+  {
+    font-size: 1.3rem;
+    width: 50%;
+  }
+  .map{ width: 49%; }
+  iframe{height: 25vw;}
 }
 
 
@@ -616,6 +796,21 @@ a
   .name {font-size: 1vw;}
   button:hover{color: #adadad;}
   .active-button:hover{color: #212121;}
+  .banner{height: 25vw;}
+  .gallery-img h2
+  {
+    font-size: 5vw;
+    left: 35%;
+    top: 35%;
+  }
+  .title{font-size: 2.8vw;}
+  .reach-us
+  {
+    font-size: 2vw;
+    width: 49%;
+  }
+  .map{ width: 50%; }
+  iframe{height: 25vw;}
 /*  li button.active-button button:hover{color: #212121;}
 */
 }

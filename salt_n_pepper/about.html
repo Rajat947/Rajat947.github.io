@@ -36,11 +36,14 @@
       <p class="restaurant-name">Salt 'n' Pepper</p>
       <div class="nav-bar clearfix display-class">
        <ul>
-         <li><button><i class="fa fa-home" aria-hidden="true"></i><p class="name">Home</p></button></li>
-         <li><button><i class="fa fa-check-square" aria-hidden="true"></i><p class="name">Book Table</p></button></li>
-         <li><button ><i class="fa fa-cutlery" aria-hidden="true"></i><p class="name">Menu</p></button></li>
-         <li class="active-bar"><button class="active-button"><i class="fa fa-info-circle" aria-hidden="true"></i><p class="name">About Us</p></button></li>
-         <li><button><i class="fa fa-phone-square" aria-hidden="true"></i><p class="name">Contact Us</p></button></li>
+         <li class=""><button class="homeBtn" onclick="location.href='home.html' "><i class="fa fa-home" aria-hidden="true"></i><p class="name">Home</p></button></li>
+
+         <li class=""><button class="bookTableBtn" onclick="location.href='Book_a_table.html'"><i class="fa fa-check-square" aria-hidden="true"></i><p class="name">Book Table</p></button></li>
+
+         <li class=""><button class="menuBtn" onclick="location.href='menu.html' "><i class="fa fa-cutlery" aria-hidden="true"></i><p class="name">Menu</p></button></li>
+
+         <li class="active-bar"><button class="aboutUsBtn  active-button" onclick="location.href='about.html' "><i class="fa fa-info-circle" aria-hidden="true"></i><p class="name">About Us</p></button></li>
+         <!-- <li><button><i class="fa fa-phone-square" aria-hidden="true"></i><p class="name">Contact Us</p></button></li> -->
        </ul>
       </div>
     </div>
@@ -99,17 +102,7 @@
     </pre>
   </div>
 </div>
-<script>
-function changeFn(x) {
-  var y=document.querySelector(".nav-bar");
-  y.classList.toggle("display-class")
-  x.classList.toggle("change");
-  var z=document.querySelectorAll(".menu-line")
-  for(var i=0;i<z.length;i++){
-    z[i].classList.toggle("active");
-  }
-}
-</script>
+<script type="text/javascript" src="app.js"></script>
   </body>
 
 </html>
