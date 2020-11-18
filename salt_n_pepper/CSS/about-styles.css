@@ -6,7 +6,7 @@ body,html
   margin: 0px;
   padding: 0px;
   height: 100vh;
-  background-color: white;
+  background-color: #FFFFCC;
 }
 .clearflix::after
 {
@@ -239,7 +239,7 @@ a
 }
 .caption
 {
-  color: #ffbb91;
+  color: #394867;
   display: block;
   font-size: 1.3vw;
   padding-bottom: 20px;
@@ -256,15 +256,16 @@ a
 .head-cap
 {
   font-family: 'Playball', cursive;
-font-size: 2rem;
+font-size: 2.2rem;
 color: #dd9866;
   margin-top: 2%;
+  font-weight: bold;
 }
 .starting
 {
   margin: 5% 20%;
   text-align:justify;
-  color: #f3eac2;
+  color: #707070;
   font-family: 'Playball', cursive;
   font-size: 2.5vw;
 
@@ -273,14 +274,14 @@ color: #dd9866;
 {
   font-size: 3rem;
   margin: auto;
-  color: #cad315;
+  color: #fa7f72;
   font-family: 'lobster' ,cursive;
 }
 .begin-text
 {
   text-align: justify;
   font-size: 2.5vw;
-  color: #f3eac2;
+  color: #707070;
   display: inline-block;
   width: 75%;
   font-family: 'Playball', cursive;
@@ -290,7 +291,7 @@ color: #dd9866;
 {
   font-size: 4vw;
   /*margin:2% 10%;*/
-  color: #cad315;
+  color: #fa7f72;
   margin: auto;
   font-family: 'lobster' ,cursive;
 }
@@ -312,7 +313,7 @@ color: #dd9866;
   .col-xs-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us1/about_us_xs.jpg");
+    /* background-image: url("../Images/about_us1/about_us_xs.jpg"); */
     background-size: 100% 100%;
   }
   .head-cap{font-size: 6vw;}
@@ -400,7 +401,7 @@ color: #dd9866;
   .col-s-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us1/about_us_s.jpg");
+    /* background-image: url("../Images/about_us1/about_us_s.jpg"); */
     background-size: cover;
   }
   li
@@ -433,7 +434,7 @@ color: #dd9866;
   .col-m-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us1/about_us_m.jpg");
+    /* background-image: url("../Images/about_us1/about_us_m.jpg"); */
     background-size: cover;
   }
   li
@@ -462,7 +463,7 @@ color: #dd9866;
   .col-l-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us1/about_us_l.jpg");
+    /* background-image: url("../Images/about_us1/about_us_l.jpg"); */
     background-size: cover;
   }
   li
@@ -493,7 +494,7 @@ color: #dd9866;
   .col-xl-12 {width: 100%;}
   .content
   {
-    background-image: url("../Images/about_us1/about_us_xl.jpg");
+    /* background-image: url("../Images/about_us1/about_us_xl.jpg"); */
     background-size: cover;
   }
   li{

@@ -6,7 +6,7 @@ body,html
   margin: 0px;
   padding: 0px;
   height: 100vh;
-  background-color: white;
+  background-color: #FFFFCC;
 }
 .clearflix::after
 {
@@ -184,11 +184,11 @@ ul
 
 .imageForSLider
 {
-  vertical-align: middle; 
+  vertical-align: middle;
   border-radius:12px;
   width:28%;
   margin: 10px 10px 10px 0px;
-}  
+}
 
 
 
@@ -197,7 +197,7 @@ ul
 /* img {vertical-align: middle;} */
 
 /* Slideshow container */
-.slideshow-container 
+.slideshow-container
 {
   /*position: relative;*/
   background-color: #222222;
