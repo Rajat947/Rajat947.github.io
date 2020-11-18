@@ -214,14 +214,14 @@ a
 .form
 {
   text-align: center;
-  margin: 20px auto;
-  width: 90%;
+  width: 100%;
+  padding: 20px;
 }
 .form-content
 {
   background-color:#f6f5f5 ;
   border-radius: 5px;
-  margin: 10px auto;
+  margin: 0px auto;
   padding:1% 0px;
   border: solid 3px grey;
 }
@@ -317,11 +317,6 @@ input[type=submit]:hover
   .col-xs-10 {width: 83.33%;}
   .col-xs-11 {width: 91.66%;}
   .col-xs-12 {width: 100%;}
-  .content
-  {
-    background-image: url("../Images/about_us1/about_us_xs.jpg");
-    background-size: 100% 100%;
-  }
   .head-cap{font-size: 6vw;}
   .starting{font-size: 5vw;}
   .firstpara-header{font-size: 6vw;}
@@ -403,11 +398,6 @@ input[type=submit]:hover
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
-  .content
-  {
-    background-image: url("../Images/about_us1/about_us_s.jpg");
-    background-size: cover;
-  }
   li
   {
     display: inline-block;
@@ -439,11 +429,6 @@ input[type=submit]:hover
   .col-m-10 {width: 83.33%;}
   .col-m-11 {width: 91.66%;}
   .col-m-12 {width: 100%;}
-  .content
-  {
-    background-image: url("../Images/about_us1/about_us_m.jpg");
-    background-size: cover;
-  }
   li
   {
     display: inline-block;
@@ -471,11 +456,6 @@ input[type=submit]:hover
   .col-l-10 {width: 83.33%;}
   .col-l-11 {width: 91.66%;}
   .col-l-12 {width: 100%;}
-  .content
-  {
-    background-image: url("../Images/about_us1/about_us_l.jpg");
-    background-size: cover;
-  }
   li
   {
     display: inline-block;
@@ -505,11 +485,6 @@ input[type=submit]:hover
   .col-xl-10 {width: 83.33%;}
   .col-xl-11 {width: 91.66%;}
   .col-xl-12 {width: 100%;}
-  .content
-  {
-    background-image: url("../Images/about_us1/about_us_xl.jpg");
-    background-size: cover;
-  }
   li{
     display: inline-block;
     margin: 55px 19px 0px 10px;

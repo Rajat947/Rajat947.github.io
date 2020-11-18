@@ -37,11 +37,13 @@
       <p class="restaurant-name">Salt 'n' Pepper</p>
       <div class="nav-bar clearfix display-class">
        <ul>
-         <li><button><i class="fa fa-home" aria-hidden="true"></i><p class="name">Home</p></button></li>
-         <li><button><i class="fa fa-check-square" aria-hidden="true"></i><p class="name">Book Table</p></button></li>
-         <li><button ><i class="fa fa-cutlery" aria-hidden="true"></i><p class="name">Menu</p></button></li>
-         <li class="active-bar"><button class="active-button"><i class="fa fa-info-circle" aria-hidden="true"></i><p class="name">About Us</p></button></li>
-         <!-- <li><button><i class="fa fa-phone-square" aria-hidden="true"></i><p class="name">Contact Us</p></button></li> -->
+         <li class="active-bar"><button class="homeBtn  active-button" onclick="location.href='home.html' "><i class="fa fa-home" aria-hidden="true"></i><p class="name">Home</p></button></li>
+
+         <li class=""><button class="bookTableBtn" onclick="location.href='Book_a_table.html'"><i class="fa fa-check-square" aria-hidden="true"></i><p class="name">Book Table</p></button></li>
+
+         <li class=""><button class="menuBtn" onclick="location.href='menu.html' "><i class="fa fa-cutlery" aria-hidden="true"></i><p class="name">Menu</p></button></li>
+
+         <li class=""><button class="aboutUsBtn" onclick="location.href='about.html' "><i class="fa fa-info-circle" aria-hidden="true"></i><p class="name">About Us</p></button></li>
        </ul>
       </div>
     </div>
@@ -53,8 +55,7 @@
           <h1>Welcome to the Complete and Finest Restaurant</h1>
       </div>
     </div>
-<!--     <hr class="section-break">
- --><!-- caraousel - hotdeals + food gallery -->
+<!-- caraousel - hotdeals + food gallery -->
 <!-- Slideshow container -->
 <div class="slideshow-container">
 <!-- Full-width images with number and caption text -->
@@ -64,7 +65,6 @@
  <img src="Images/momos.jpg" style="display: inline-block; vertical-align: middle;" width="30%" height="30%" class="slide-image" alt="momos-img">
  <div class="text-about-deal">
    <h2 class="adjust-h2 slide-text">HOT MEALS STARTING AT JUST <br> &#8377;199</h2>
-   <!-- <h4 style="font-size:3em; margin:10px;">&#x20B9; 99 <sup>*</sup></h4> -->
  </div>
 
 </div>
@@ -81,9 +81,8 @@
 <!-- Next and previous buttons -->
 <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 </div>
-<br>
-<!-- <hr class="section-break">
- --><!-- banner section -->
+
+<!-- banner section -->
     <div class="gallery-img">
       <img class="banner" src="Images/banner.jpg" alt="banner-food-gallery">
       <h2><i style="color:#f5b461;" class="fas fa-pizza-slice"></i>  Food Gallery <i style="color:#f5b461;" class="fas fa-pizza-slice"></i></h2>
@@ -113,8 +112,7 @@
 <a class="adjust2-arrow next" onclick="plusSlides(1, 1)">&#10095;</a>
 </div>
 
-<!-- <hr class="section-break">
- --><!-- How to reach us -->
+<!-- How to reach us -->
 <div class="map-reach-section">
   <div class="reach-us">
  <h2>How to reach us !</h2>
@@ -154,7 +152,7 @@
 </div>
 
 <!-- Javascript -->
-
+<script type="text/javascript" src="app.js"></script>
 <script>
 var slideIndex = [1,1];
 var slideId = ["mySlides1", "mySlides2"]
@@ -174,15 +172,6 @@ for (i = 0; i < x.length; i++) {
   x[i].style.display = "none";
 }
 x[slideIndex[no]-1].style.display = "inline-block";
-}
-function changeFn(x) {
-  var y=document.querySelector(".nav-bar");
-  y.classList.toggle("display-class")
-  x.classList.toggle("change");
-  var z=document.querySelectorAll(".menu-line")
-  for(var i=0;i<z.length;i++){
-    z[i].classList.toggle("active");
-  }
 }
 </script>
 
