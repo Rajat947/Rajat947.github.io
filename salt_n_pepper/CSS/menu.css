@@ -7,6 +7,7 @@ body,html
   margin: 0px;
   padding: 0px;
   height: 100vh;
+  background-color: #FFFFCC;
 
 }
 
@@ -109,7 +110,6 @@ h3
 {
   color:#fff;
   font-size: 1.2vw;
-  opacity:0.75;
   margin: 0px;
 }
 .footer
@@ -251,17 +251,18 @@ a
 .caption-head
 {
   font-family: 'Playball', cursive;
-  font-size: 1.7rem;
+  font-size:2.2rem;
   text-align: center;
   color: #dd9866;
+  font-weight: bold;
 }
 .headline-menu
 {
   text-align: justify;
   margin: 7% 5%;
-  font-size:1.5rem;
+  font-size:1.8rem;
   font-family: 'Playball', cursive;
-  color: #c6b497;
+  color: #707070;
 
 }
 .main-heading-menu

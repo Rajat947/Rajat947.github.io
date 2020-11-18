@@ -6,7 +6,7 @@ body,html
   margin: 0px;
   padding: 0px;
   height: 100vh;
-  background-color: white;
+  background-color: #FFFFCC;
 }
 .clearflix::after
 {
@@ -246,7 +246,7 @@ a
   font-size: 2rem;
   font-family: 'Playball', cursive;
   color: #a05344;
-  font-weight: bolder;
+  font-weight: normal;
 }
 .label
 {
