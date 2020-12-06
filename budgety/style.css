@@ -153,7 +153,7 @@ button
 .add_description:focus, .add_value:focus, .add_type:focus
 {
 	outline: none;
-	border: 1px solid #28B9B5; 
+	border: 1.5px solid #28B9B5; 
 }
 .save_item:focus
 {
@@ -161,6 +161,9 @@ button
 }
 
 .save_item:active { transform: translateY(2px); }
+
+.red { color: #FF5049; }
+.red-focus:focus {border-color: #FF5049;}
 
 /***********Content***********/
 
@@ -176,8 +179,8 @@ button
 /*	max-width: 400px;
 */	text-align: left;
 	color: #28B9B5;
-/*	vertical-align: top;
-*/}
+	vertical-align: top;
+}
 
 .Expenses
 {
